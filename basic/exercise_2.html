@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // example 1
+        let nums = [1, 2, 3]
+let numbers = [1, 2, 3]
+
+console.log(nums == numbers) 
+
+        // example 2    
+
+let userOne = {
+name:'Asabeneh',
+role:'teaching',
+country:'Finland'
+}
+
+let userTwo = {
+name:'Asabeneh',
+role:'teaching',
+country:'Finland'
+}
+
+console.log(userOne == userTwo)
+
+
+// declared number data type
+let age = 35
+const gravity = 9.81  // we use const for non-changing values, gravitational constant in  m/s2
+let mass = 72         // mass in Kilogram
+const PI = 3.14       // pi a geometrical constant
+
+// More Examples
+const boilingPoint = 100 // temperature in oC, boiling point of water which is a constant
+const bodyTemp = 37      // oC average human body temperature, which is a constant
+
+console.log(age, gravity, mass, PI, boilingPoint, bodyTemp)
+
+
+// Math Object
+
+
+const randNum = Math.random() // creates random number between 0 to 0.999999
+console.log(randNum)
+
+console.log(Math.round(PI))                // 3 to round values to the nearest number
+
+console.log(Math.round(9.81))              // 10
+
+console.log(Math.floor(PI))                // 3 rounding down
+
+console.log(Math.ceil(91.5))                 // 4 rounding up
+
+console.log(Math.min(-5, 3, 20, 4, 5, 10)) // -5, returns the minimum value
+
+console.log(Math.max(-5, 3, 20, 4, 5, 10)) // 20, returns the maximum value
+
+
+
+// quote and quote with black tick
+let quote = "The saying,'Seeing is Believing' is not correct in 2020."
+let quotWithBackTick = `The saying,'Seeing is Believing' is not correct in 2020.`
+console.log(quote);
+console.log(quotWithBackTick);
+
+// Escape Sequences in Strings
+console.log('I hope everyone is enjoying the 30 Days Of JavaScript challenge.\nDo you ?') // line break
+console.log('Days\tTopics\tExercises')
+console.log('Day 1\t3\t5')
+console.log('Day 2\t3\t5')
+console.log('Day 3\t3\t5')
+console.log('Day 4\t3\t5')
+console.log('This is a backslash  symbol (\\)') // To write a backslash
+console.log('In every programming language it starts with \"Hello, World!\"')
+console.log("In every programming language it starts with \'Hello, World!\'")
+console.log('The saying \'Seeing is Believing\' isn\'t correct in 2020')
+
+    </script>
+    
+</body>
+</html>
