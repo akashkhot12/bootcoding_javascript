@@ -1,4 +1,8 @@
 
 function myFunction() {
-  alert("Hello! I am an alert box!");
+  let ak = prompt('What  is your name ?')
+  document.write("Welcome " +ak+"....!");
+  // history.back();
+  
+
 }
