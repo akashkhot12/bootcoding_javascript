@@ -1,4 +1,4 @@
-let btn = document.getElementsByTagName("button");
+let btn = document.getElementsByTagName("toggle");
 // let para= document.getElementById("para");
 let ptg = document.getElementsByTagName("p");
 
