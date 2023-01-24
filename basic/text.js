@@ -15,3 +15,9 @@ function clickMe(){
       btn.innerHTML = "show"
     }
   }
+
+  function color(){
+
+    para.style
+
+  }
