@@ -10,7 +10,7 @@ let ptg = document.getElementsByTagName("p");
 // })
 
 
-function clickMe(){
+function clickMe(){ 
   if(ptg.style.display === "none")
   {
     ptg.style.display= "block";
