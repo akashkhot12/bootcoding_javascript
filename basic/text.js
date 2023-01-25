@@ -9,7 +9,7 @@ function clickMe(){
       para.style.display= "block";
       btn.innerHTML = "hide"
   
-    }
+    } 
     else{
       para.style.display = "none"
       btn.innerHTML = "show"
