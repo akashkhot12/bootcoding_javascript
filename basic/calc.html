@@ -33,7 +33,7 @@
         width: 24%;
         height: 20%;
         text-align: center;
-        border: black;
+        border: rgb(255, 255, 255);
     }
 
     *{
@@ -67,19 +67,24 @@
         font-weight: 1000;
     }
 
-    .Ipt-text{
-        background-color: #f8f1ff;
-        font-weight: 500;
-        font-size: 40px;
-        height: 70px;
-    }
+   
 
-    .lbl-name{
+    #label{
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
-            font-size: x-large;
-            border-width: 2px;
+            font-size: 700px;
+            border-width: 20px;
             border-color: black;
+    }
+
+    #input{
+        text-align: end;
+        font-size:70px;
+        background-color: #f8f1ff;
+        font-weight: 500;
+        padding: 20px;
+       
+        height: 70px;
     }
 
 
@@ -90,58 +95,70 @@
     <div class="container">
         <div class="mx-auto my auto w-50 border rounded p-2 d-grid" style="max-width: 425px;">
             <div class="row header">
-                <div class="col-md-12 lbl-name">
+                <div id="label" class="col-md-12 ">
                     <p>Calculator</p>
                 </div>
             </div>
             <!-- inpute line -->
-            <input  type="text" name="" id="" class="form-control Ipt-text" value="0">
+            <input  type="text" name="" id="input" class="form-control " value="">
             <br>
 
 
             <!-- row 1 of btn -->
-            <button type="button" class="operator btn btn-info btn-color" value="">Ac</button>
-            <button type="button" class="operator btn btn-info btn-color " value="">Back</button>
-            <button type="button" class="operator btn btn-info btn-operator" value="">/</button>
-            <button type="button"  class="operator btn btn-info btn-operator"  value="">*</button>
+            <button onclick="clr()"   type="button" class="operator btn btn-info btn-color" value="">Ac</button>
+
+            <button onclick="del()" type="button" class="operator btn btn-info btn-color " value="">Back</button>
+
+            <button onclick="display('/')" type="button" class="operator btn btn-info btn-operator" value="">/</button>
+
+            <button onclick="display('*')" type="button"  class="operator btn btn-info btn-operator"  value="">*</button>
             <br><br>
 
 
 
             <!-- row 2 of btn -->
 
-            <button type="button" class="operator btn btn-info btn-number" value="7">7</button>
-            <button type="button" class="operator btn btn-info btn-number" value="8">8</button>
-            <button type="button" class="operator btn btn-info btn-number" value="9">9</button>
-            <button type="button"class="operator btn btn-info btn-operator"value="-">-</button>
+            <button onclick="display('7')" type="button" class="operator btn btn-info btn-number" value="7">7</button>
+
+            <button onclick="display('8')" type="button" class="operator btn btn-info btn-number" value="8">8</button>
+
+            <button onclick="display('9')" type="button" class="operator btn btn-info btn-number" value="9">9</button>
+
+            <button onclick="display('-')" type="button"class="operator btn btn-info btn-operator"value="-">-</button>
             <br><br>
 
 
 
             <!-- row 3 of btn -->
 
-            <button type="button" class="operator btn btn-info btn-number" value="4">4</button>
-            <button type="button" class="operator btn btn-info btn-number" value="5">5</button>
-            <button type="button" class="operator btn btn-info btn-number" value="6">6</button>
-            <button type="button" class="operator btn btn-info btn-operator" value="+">+</button>
+            <button onclick="display('4')" type="button" class="operator btn btn-info btn-number" value="4">4</button>
+
+            <button onclick="display('5')" type="button" class="operator btn btn-info btn-number" value="5">5</button>
+
+            <button onclick="display('6')" type="button" class="operator btn btn-info btn-number" value="6">6</button>
+
+            <button onclick="display('+')" type="button" class="operator btn btn-info btn-operator" value="+">+</button>
 
             <br><br>
 
 
 
             <!-- row 4 of btn -->
-            <button type="button"  class="operator btn btn-info btn-number" value="1">1</button>
-            <button type="button"class="operator btn btn-info btn-number"  value="2">2</button>
-            <button type="button"class="operator btn btn-info btn-number" value="3">3</button>
-            <button type="button" class="operator btn btn-info btn-operator"  value=".">.</button>
+            <button onclick="display('1')" type="button"  class="operator btn btn-info btn-number" value="1">1</button>
+
+            <button onclick="display('2')" type="button"class="operator btn btn-info btn-number"  value="2">2</button>
+
+            <button onclick="display('3')" type="button"class="operator btn btn-info btn-number" value="3">3</button>
+
+            <button onclick="display('.')" type="button" class="operator btn btn-info btn-operator"  value=".">.</button>
             <br><br>
 
 
 
             <!-- row 5 of btn -->
 
-            <button type="button"id="btn1" class="operator btn btn-info btn-number" value="0">0</button>
-            <button type="button" class="operator btn btn-info btn-operator" value="=">=</button>
+            <button onclick="display('0')"type="button"id="btn1" class="operator btn btn-info btn-number" value="0">0</button>
+            <button onclick="cal()" type="button" class="operator btn btn-info btn-operator" value="=">=</button>
             <br><br>
 
 
