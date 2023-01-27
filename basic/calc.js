@@ -10,15 +10,13 @@ function cal(){
     }
     catch(error){
         alert("Invalid ");
-    }
-
-   
+    }  
 }
 
 function clr(){
     outputScreen.value=" ";
 }
 
-function del(){
+function back(){
     outputScreen.value = outputScreen.value.slice(0,-1);
 }
