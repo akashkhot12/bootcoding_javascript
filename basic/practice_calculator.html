@@ -46,10 +46,10 @@
   .padding-reset {
     padding-left: 0;
     padding-right: 0;
-    /*use for resing default padding for .row in input text section*/
+    /*use for resing default padding for .row in button text section*/
   }
 
-  .teaxtbox input[type="text"] {
+  .teaxtbox button[type="text"] {
     width: 100%;
     border: 1px solid #f1f1f1;
     font-size: 18px;
@@ -57,11 +57,11 @@
     padding: 12px;
   }
 
-  .teaxtbox input[type="text"]:focus {
+  .teaxtbox button[type="text"]:focus {
     outline: none;
   }
 
-  .commonbutton input[type="submit"] {
+  .commonbutton button[type="submit"] {
     padding: 8px;
     background: #f2f2f2;
     border: none;
@@ -72,7 +72,7 @@
     border-radius: 5px;
   }
 
-  .conflict input[type="submit"] {
+  .conflict button[type="submit"] {
     padding: 8px;
     background: #f2f2f2;
     border: none;
@@ -83,8 +83,8 @@
     border-radius: 5px;
   }
 
-  .conflict input[type="submit"]:focus,
-  .commonbutton input[type="submit"]:focus {
+  .conflict button[type="submit"]:focus,
+  .commonbutton button[type="submit"]:focus {
     outline: none;
   }
 
@@ -124,7 +124,7 @@
         <!-- start of textbox -->
         <div class="row teaxtbox">
           <div class="col-md-12 padding-reset">
-            <input type="text" name="" value="">
+            <button id="ipt" type="text" name="" value="">
           </div>
         </div>
         <!-- end of textbox -->
@@ -133,55 +133,55 @@
         <div class="row commonbutton">
           <!-- first row -->
           <div class="col-md-3">
-            <input type="submit" name="" value="&#8730;" class="">
+            <button onclick="clr()" id="ipt" type="submit" name="" value="Ac" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="(" class="">
+            <button onclick="display()" type="submit" name="" value="(" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value=")" class="">
+            <button onclick="display()" type="submit" name="" value=")" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="%" class="">
+            <button onclick="display('%')" type="submit" name="" value="%" class="">
           </div>
           <!-- second row -->
           <div class="col-md-3">
-            <input type="submit" name="" value="7">
+            <button onclick="display('7')" type="submit" name="" value="7">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="8" class="">
+            <button onclick="('8')" type="submit" name="" value="8" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="9" class="">
+            <button onclick="('9')" type="submit" name="" value="9" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="/" class="">
+            <button onclick="('/')" type="submit" name="" value="/" class="">
           </div>
           <!-- third row -->
           <div class="col-md-3">
-            <input type="submit" name="" value="4" class="">
+            <button onclick="('4')" type="submit" name="" value="4" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="5" class="">
+            <button onclick="('5')" type="submit" name="" value="5" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="6" class="">
+            <button onclick="('6')" type="submit" name="" value="6" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="X" class="">
+            <button onclick="('*')" type="submit" name="" value="X" class="">
           </div>
           <!-- four row -->
           <div class="col-md-3">
-            <input type="submit" name="" value="1" class="">
+            <button onclick="('1')" type="submit" name="" value="1" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="2" class="">
+            <button onclick="display('2')" type="submit" name="" value="2" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="3" class="">
+            <button onclick="display('3')" type="submit" name="" value="3" class="">
           </div>
           <div class="col-md-3">
-            <input type="submit" name="" value="-" class="">
+            <button onclick="display('-')" type="submit" name="" value="-" class="">
           </div>
         </div> <!-- end of comonbutton div -->
         <!-- end of button design -->
@@ -190,21 +190,21 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-8">
-                <input type="submit" name="" value="0" class="">
+                <button type="submit" name="" value="0" class="">
               </div>
               <div class="col-md-4">
-                <input type="submit" name="" value="." class="">
+                <button type="submit" name="" value="." class="">
               </div>
               <div class="col-md-4">
-                <input type="submit" name="" value="Del" id="del">
+                <button type="submit" name="" value="Del" id="del">
               </div>
               <div class="col-md-8">
-                <input type="submit" name="" value="=" id="equal">
+                <button type="submit" name="" value="=" id="equal">
               </div>
             </div>
           </div> <!-- end  zero, dot, del and equal sign div -->
           <div class="col-md-3">
-            <input type="submit" name="" value="+" id="plus">
+            <button type="submit" name="" value="+" id="plus">
           </div>
         </div> <!-- end of conflicting area -->
         <!-- end of conflicting button area -->
