@@ -5,4 +5,4 @@ function yourAGe(age){
     let months = total_age * 12;
     console.log("your rem days is "+days + " , your rem weeks is "+weeks+ " , your rem months is "+months);
 }
-yourAGe(24);
+yourAGe(23);
