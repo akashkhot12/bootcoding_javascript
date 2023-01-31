@@ -8,7 +8,7 @@ for (let i = 0; i < arr.length; i++) {
   }
 
   if (arr[i] > min && arr[i] < sd_min) {
-    sd_min = arr[i];
+    sd_min = arr[i] ;
   }
 }
 
