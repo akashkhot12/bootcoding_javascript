@@ -6,7 +6,7 @@ for(let i=0;i<a.length;i++)
     if(max<a[i])
     {
         max=a[i];
-        max_sec=a[i]
+         max_sec=a[i]
        
     }
 }
