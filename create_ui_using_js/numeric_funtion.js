@@ -5,6 +5,7 @@ function clr(){
     
     let textfield = document.getElementById("ipt");
     textfield.value =' ';
+    document.getElementById('result').innerHTML = "clear succesfully !"
     
 }
 
