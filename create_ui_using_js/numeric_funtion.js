@@ -116,11 +116,11 @@ function armstrong(){
     if(sum == textfield) 
 {
     console.log(textfield);
-    document.getElementById('result').innerHTML = "this value "+textfield+ " is a not Armstrong number"
+    document.getElementById('result').innerHTML = "This value "+textfield+ " is a not Armstrong number"
 }
 else{
     console.log(textfield );
-    document.getElementById('result').innerHTML = "this value "+textfield+ " is a  Armstrong number"
+    document.getElementById('result').innerHTML = "This value "+textfield+ " is a  Armstrong number"
 }
 }
 
