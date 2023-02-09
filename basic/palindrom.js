@@ -1,5 +1,5 @@
 
-
+palindrome();
 
 function palindrome(){
     for(i=2;i<=2000;i++){
@@ -29,3 +29,4 @@ function palindrome( number){
         return false;
     }
 }
+
