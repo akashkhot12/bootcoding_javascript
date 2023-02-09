@@ -130,7 +130,7 @@ function sfo(){
     console.log(typeof textfield)
     var num = parseInt(textfield, 10);
     console.log(textfield);
-    document.getElementById('result').innerHTML = "sum of odd value is invalid please try in array !"
+    document.getElementById('result').innerHTML = "Sum of odd value is invalid please try in array !"
 
 }
 
@@ -140,7 +140,7 @@ function sfe(){
     console.log(typeof textfield)
     var num = parseInt(textfield, 10);
     console.log(textfield);
-    document.getElementById('result').innerHTML = "sum of even value is invalid please try in array !"
+    document.getElementById('result').innerHTML = "Sum of even value is invalid please try in array !"
 
 }
 
