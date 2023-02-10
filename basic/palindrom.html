@@ -8,12 +8,34 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae dolorum sint, rem, dicta aspernatur dolores voluptates veritatis ullam odit harum autem asperiores ex, enim minima nihil id iste laudantium? Aut quam laborum, hic consequuntur nihil officia esse in, eius ipsa expedita reiciendis numquam nulla! Ea sit itaque neque? Ducimus!</p>
     
-    <button onclick="palindrome()">click</button>
 
     <p class="result"></p>
 
 </body>
+<script>
+	function Palindrome()
+	{
+		var rem, temp, final = 0;
+		var number = Number(document.getElementById("N").value);
+
+		temp = number;
+		while(number>0)
+		{
+			rem = number%10;
+			number = parseInt(number/10);
+			final = final*10+rem;
+		}
+		if(final==temp)
+		{
+			window.alert("The inputed number is Palindrome");
+		}
+		else
+		{
+			window.alert("The inputted number is not palindrome");
+		}
+	}
+</script>
+
 
 </html>
