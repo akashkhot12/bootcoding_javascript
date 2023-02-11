@@ -1,13 +1,17 @@
 function equality(a,b){
-    a = a.split(',');
-    b = b.split(',')
-    // if(usingSplit==usingSplit1){
-    //     return true;
-    // }
-    // else{
-    //     return false;
-    // }
-    console.log(a,b);
+    a=a.split("");
+    b=b.split("");
+
+ let  c=a.length;
+  let d=b.length;
+   if(c==d){
+    return true;
+   }
+   else{
+    return false;
+   }
+
 }
 
 let compare = equality('abc','xyz');
+console.log(compare);
