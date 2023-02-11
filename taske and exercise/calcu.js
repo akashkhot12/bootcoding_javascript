@@ -9,4 +9,4 @@ function PointCalculator(win,draw,loss)
 }
 
 let gamePoint=PointCalculator(3,4,2);
-console.log("Your Score is " +gamePoint);
+console.log("Your gamepoint Score is " +gamePoint);
