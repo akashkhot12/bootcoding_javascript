@@ -14,4 +14,4 @@ function equality(a,b){
 }
 
 let compare = equality('abc','xyz');
-console.log(compare);
+console.log("Your tring is "+compare+".");
