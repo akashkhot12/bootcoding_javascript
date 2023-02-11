@@ -14,4 +14,4 @@ function equality(a,b){
 }
 
 let compare = equality('abc','xyz');
-console.log("Your tring is "+compare+".");
+console.log(`your string is equal or not :- ${compare}`);
