@@ -5,4 +5,4 @@ function yourAge(age) {
 
 }
 
-console.log(yourAge(18));
+console.log("Your age in days "+yourAge(18)+".");

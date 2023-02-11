@@ -13,4 +13,4 @@ function checking(a,b){
     }
 }
  result = checking(10,5)
-console.log(result);
+console.log("Your value is "+result+".");

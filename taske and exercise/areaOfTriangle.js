@@ -3,4 +3,4 @@ function areaOfTriangle(height,base){
     return result;
 }
 result=areaOfTriangle(10,10);
-console.log(result);
+console.log("The area of triangle is "+result+".");

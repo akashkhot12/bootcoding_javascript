@@ -12,4 +12,4 @@ function three_para(prob,price,pay){
 
 }
 let result =three_para(1,80,9)
-console.log(result);
+console.log("The final value is "+result+".");

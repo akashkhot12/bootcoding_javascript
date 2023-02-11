@@ -9,4 +9,4 @@ function count(a) {
 return sum;
 }
 
-console.log(count([1, 2, 3, 4, -5]));
+console.log("The sum of string positive number is "+count([1, 2, 3, 4, -5])+".");
