@@ -1,2 +1,2 @@
 age=22;
-console.log(typeof(age + ""));
+console.log(typeof(age + ""));    
