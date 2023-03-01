@@ -13,3 +13,8 @@
 #khot{
     background-color: orangered;
 }
+
+.boxing{
+    border: solid 5px red;
+    padding: 50px 40px 50px;
+}
