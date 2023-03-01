@@ -1,0 +1,14 @@
+.akash li{
+    font-size: 30px;
+    display: inline-block;
+    margin: 10px;
+
+    
+}
+.akash{
+    text-align: center;
+    margin: 20px;
+    background-color:royalblue ;
+    list-style: none;
+  text-transform: uppercase;
+}
