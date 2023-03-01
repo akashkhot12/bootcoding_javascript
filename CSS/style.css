@@ -16,7 +16,7 @@
     
     margin: 20px 40px 20px 47px;
     padding: 20px 40px 20px 47px ;
-
+    
     background-color: orangered;
 }
 
@@ -24,4 +24,9 @@
   
     border: solid 5px red;
     padding: 50px 40px 50px;
+}
+
+.akash1 h1{
+ color: aqua;
+ display: inline;
 }
