@@ -7,14 +7,21 @@
 }
 
 #akash{  
+    margin: 20px 40px 20px 47px;
+    padding: 20px 40px 20px 47px ;
     background-color: greenyellow;
 }
 
 #khot{
+    
+    margin: 20px 40px 20px 47px;
+    padding: 20px 40px 20px 47px ;
+
     background-color: orangered;
 }
 
 .boxing{
+  
     border: solid 5px red;
     padding: 50px 40px 50px;
 }
