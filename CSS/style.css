@@ -30,3 +30,6 @@
  color: aqua;
  display: inline;
 }
+.blocking a{
+    display: block;
+}
