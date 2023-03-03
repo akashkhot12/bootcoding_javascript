@@ -41,11 +41,12 @@
             </div> -->
         </nav>
 
-        <div class="wrapper">
+        <div class="wrapper circle">
             <div class="cols cols0">
                 <span class="topline">Hello</span>
                 <h1 class="name">Akash Khot</h1>
-                <h1>I'm<span class="multitext"> Full stack Devloper</span></h1>
+                <h1>I'm <span class="multitext"> </span></h1>
+                
 
                 <div class="btns">
                     <button>download CV</button>
@@ -57,11 +58,23 @@
             <div class="cols cols1">
                 <div class="imgbox">
                     <!-- <img src="" id="spalsh"> -->
-                    <img src="folio-image.png" >
+                    <img src="folio-image.png">
                 </div>
             </div>
         </div>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <Script>
+        var typingEffect= new Typed(".multitext",{
+            strings : ["","Coder.","Full stack developer."],
+            loop : true,
+            typeSpeed:100,
+            backSpeed:80,
+            backDelay: 1500
+        })
+    </Script>
 
 
 </body>

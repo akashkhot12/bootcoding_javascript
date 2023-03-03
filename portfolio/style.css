@@ -1,6 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
+
   *{
     margin: 0;
     padding: 0;
@@ -41,7 +43,7 @@
 
   b{
     font-size: 70px;
-    color: #FF8B13;
+    color: #F94A29;
   }
 
   .navItems{
@@ -63,7 +65,7 @@
   }
 
   .navItems li:hover a{
-    color: #FF8B13;
+    color: #F94A29;
   }
 
   .wrapper{
@@ -84,8 +86,8 @@
     border-radius: 50%;
     left: -12%;
     top:35%;
-    background: linear-gradient(45deg,#FF8B13,#FFB100);
-    animation: object 6s infinite;
+    background: linear-gradient(45deg,#F94A29,#FFED00);
+    animation: object 6s  infinite;
   }
 
   .wrapper::after{
@@ -96,9 +98,25 @@
     border-radius: 50%;
     left: 45%;
     top:12%;
-    background: linear-gradient(45deg,#FF8B13,#FFB100);
-    animation: object 6s infinite;
+    background: linear-gradient(45deg,#F94A29,#FFED00);
+    animation: object1 30s  infinite;
   }
+
+  @keyframes object {
+      50%{
+        left:-13%;
+        top: 41%; 
+      }
+  }
+
+  @keyframes object1 {
+    50%{
+      left:45%;
+      top: 20%; 
+    }
+}
+
+
   
 
   .cols{
@@ -106,6 +124,7 @@
   }
 
   .cols0{
+    width: 60%;
     z-index: 5;
   }
 
@@ -123,31 +142,36 @@
     height: 4px;
     width: 35px;
     bottom: 10px;
-    background-color: #FF8B13;
+    background-color: #F94A29;
   }
 
   h1{
     display: block;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 900;
     color: #3d535f;
   }
+
+  
   .name{
     display: block;
     font-size: 60px;
     font-weight: 900;
     color: #3d535f;
+    
   }
 
+  
+
   .multitext{
-    color: #FF8B13;
+    color: #F94A29;
     text-transform: capitalize;
   }
 
   .btns{
     width: 100%;
-    position: relative;
-    left: 150px;
+    position: flex;
+    left: 80px;
   }
 
   button{
@@ -163,12 +187,12 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     box-shadow: 0 15px 10px rgba(0, 0, 0,0.4);
-    border-radius: 10%;
+    border-radius: 12px;
 
   }
 
   button:hover{
-    background-color: #FF8B13;
+    background-color: #F94A29;
   }
 
   .imgbox{
