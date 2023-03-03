@@ -76,8 +76,24 @@
     overflow: hidden;
   }
 
+  .wrapper::before{
+    position: absolute;
+    content: '';
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    left: -12%;
+    top:40%;
+    background: linear-gradient(45deg,#7f00ff,rgb(245, 201, 6));
+    animation: object 6s infinite;
+  }
+
   .cols{
     width: 50%;
+  }
+
+  .cols0{
+    z-index: 5;
   }
 
   .topline{
@@ -99,13 +115,13 @@
 
   h1{
     display: block;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 900;
     color: #3d535f;
   }
   .name{
     display: block;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 900;
     color: #3d535f;
   }
@@ -159,6 +175,6 @@
   @keyframes animateUser{
     50%{
         right: 20px;
-        top: -50px;
+        top: -40px;
     }
   }
