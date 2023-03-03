@@ -41,7 +41,7 @@
 
   b{
     font-size: 70px;
-    color: #7f00ff;
+    color: #FF8B13;
   }
 
   .navItems{
@@ -63,7 +63,7 @@
   }
 
   .navItems li:hover a{
-    color: #7f00ff;
+    color: #FF8B13;
   }
 
   .wrapper{
@@ -79,14 +79,27 @@
   .wrapper::before{
     position: absolute;
     content: '';
-    height: 350px;
-    width: 350px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     left: -12%;
-    top:40%;
-    background: linear-gradient(45deg,#7f00ff,rgb(245, 201, 6));
+    top:35%;
+    background: linear-gradient(45deg,#FF8B13,#FFB100);
     animation: object 6s infinite;
   }
+
+  .wrapper::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 45%;
+    top:12%;
+    background: linear-gradient(45deg,#FF8B13,#FFB100);
+    animation: object 6s infinite;
+  }
+  
 
   .cols{
     width: 50%;
@@ -110,24 +123,24 @@
     height: 4px;
     width: 35px;
     bottom: 10px;
-    background-color: #7f00ff;
+    background-color: #FF8B13;
   }
 
   h1{
     display: block;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     color: #3d535f;
   }
   .name{
     display: block;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 900;
     color: #3d535f;
   }
 
   .multitext{
-    color: #7f00ff;
+    color: #FF8B13;
     text-transform: capitalize;
   }
 
@@ -150,11 +163,12 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     box-shadow: 0 15px 10px rgba(0, 0, 0,0.4);
+    border-radius: 10%;
 
   }
 
   button:hover{
-    background-color: #7f00ff;
+    background-color: #FF8B13;
   }
 
   .imgbox{
