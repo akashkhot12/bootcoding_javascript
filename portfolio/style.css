@@ -261,15 +261,28 @@
     text-align: center;
     margin-top: 50px;
     text-transform: capitalize;
-    
+   
 
+  }
+
+  .heading h1:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 550px;
+    background-color: #F94A29;
 
   }
 
   .heading h1{
     font-size: 40px;
     margin-bottom: 5px;
-    font-family: 'Golos Text', sans-serif;;
+    font-family: 'Golos Text', sans-serif;
+    padding-bottom:1rem; ;
+    position: relative;
   }
 
   .heading button{
@@ -326,4 +339,53 @@
 
   .contact ul li{
     font-size: 20px;
+  }
+
+
+  /* skills section */
+
+
+  .skills{
+    background-color: #f3f5f8;
+    margin-top: 50px;
+    margin-top: 50px;
+    text-transform: capitalize;
+  }
+
+  .inner{
+    padding-top: 20px;
+  }
+
+  .header0 h1{
+    font-family: 'Golos Text', sans-serif;
+  }
+  .header0 h1 span{
+    color: #F94A29;}
+
+  .header0{
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+  }
+
+  .header0::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 150px;
+    background-color: #F94A29;
+
+  }
+
+  .container0{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
   }
