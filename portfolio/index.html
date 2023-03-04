@@ -10,6 +10,8 @@
     <link rel="icon" href="https://www.shutterstock.com/image-vector/initial-letter-logo-pf-company-600w-1019260198.jpg"
         type="image/icon type">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style.css">
@@ -23,22 +25,19 @@
 
     <div class="container">
         <nav>
-            <div class="logo">Portfolio<b>.</b></div>
+            <div class="logo">P.<b>F</b>olio</div>
             <ul class="navItems">
                 <li><a href="#">home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">logo</a></li>
             </ul>
+            <div class="toggleSwitch">
+                <i class="fa fa-sun"></i>
+                <i class="fa fa-moon"></i>
+            </div>
 
-            <!-- <div class="links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div> -->
         </nav>
 
         <div class="wrapper circle">
@@ -46,7 +45,7 @@
                 <span class="topline">Hello</span>
                 <h1 class="name">Akash Khot</h1>
                 <h1>I'm <span class="multitext"> </span></h1>
-                
+
 
                 <div class="btns">
                     <button>download CV</button>
@@ -58,20 +57,39 @@
             <div class="cols cols1">
                 <div class="imgbox">
                     <!-- <img src="" id="spalsh"> -->
-                    <img src="folio-image.png">
+                    <!-- <img src="folio-image.png"> -->
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <div class="about">
+
+        <h2>all <span>about</span> me & my <span>exeperince</span> </h2>
+        <div class="main-about">
+            <div class="image-container">
+                <img src="folio-image.png" alt="">
+            </div>
+            <div class="text-container">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel cumque enim ea voluptas consectetur, id
+                    qui? Vero rerum vitae eaque tenetur nulla enim assumenda, impedit voluptatibus voluptate harum
+                    officiis expedita.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <Script>
-        var typingEffect= new Typed(".multitext",{
-            strings : ["","Coder.","Full stack developer."],
-            loop : true,
-            typeSpeed:100,
-            backSpeed:80,
+        var typingEffect = new Typed(".multitext", {
+            strings: ["", "Coder.", "Full stack developer."],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
             backDelay: 1500
         })
     </Script>
