@@ -404,33 +404,61 @@
     align-items: center;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
-
+    position: relative;
   }
 
+  /* .skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 35px;
+    height: 8px;
+    background-color: #e90a0a;
+  } */
+
+  /* .skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    width: 35px;
+    height: 4px;
+    background-color: #FFED00;
+  } */
+
   .skill-title h3{
-  color: #000;
+  color: #3d535f;
     margin: 0.5rem;
     font-size: 20px;
   }
 
 
   .skill-icon{
-    margin-bottom: 30px;
-    width: 80px;
+    margin-bottom: 5px;
+    width: 70px;
     font-family: 'Golos Text', sans-serif;
+    z-index: 2;
   }
 
   .img{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     position: relative;
-    border-radius: 20px;
-    background-color: #f3f5f8;
+    border-radius: 50px;
+    background:#fff;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  /* .img:after{
-    content: ;
-  } */
+.img:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 110px;
+  background: rgba(100,100,100,0.5);
+  border-radius: 50px 0 0 50px;
+}
