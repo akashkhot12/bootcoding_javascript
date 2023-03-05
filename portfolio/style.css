@@ -339,6 +339,7 @@
 
   .contact ul li{
     font-size: 20px;
+    font-family: 'Golos Text', sans-serif;
   }
 
 
@@ -377,12 +378,13 @@
     height: 4px;
     width: 150px;
     background-color: #F94A29;
+  
 
   }
 
   .container0{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     justify-content: center;
     align-items: center;
     grid-gap: 1rem;
@@ -405,14 +407,17 @@
 
   }
 
-  .skill-title h3,p{
-    color:#3d535f;
+  .skill-title h3{
+  color: #000;
     margin: 0.5rem;
+    font-size: 20px;
   }
 
 
   .skill-icon{
-    width: 50px;
+    margin-bottom: 30px;
+    width: 80px;
+    font-family: 'Golos Text', sans-serif;
   }
 
   .img{
