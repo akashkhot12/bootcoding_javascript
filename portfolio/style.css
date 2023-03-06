@@ -165,7 +165,7 @@
 
   h1{
     display: block;
-    font-size: 45px;
+    font-size: 44px;
     font-weight: 900;
     color: #3d535f;
   }
@@ -173,9 +173,10 @@
   
   .name{
     display: block;
-    font-size: 60px;
+    font-size: 80px;
     font-weight: 900;
     color: #3d535f;
+    font-family: 'Golos Text', sans-serif;
     
   }
 
@@ -223,9 +224,9 @@
   .imgbox img{
     position: relative;
     align-items: baseline;
-    height: 100%;
+    height: 150%;
     /* width: calc(100% - 80px); */
-    width: 600px;
+    width: 500px;
     margin-top: 150px;
     top: 50px;
     right: 10px;
@@ -374,7 +375,7 @@
   }
 
   .header0::after{
-    content: '';
+     content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -382,9 +383,10 @@
     height: 4px;
     width: 150px;
     background-color: #F94A29;
-  
+   
+    }
 
-  }
+  
 
   .container0{
     display: grid;
@@ -411,30 +413,45 @@
     position: relative;
   }
 
-  /* .skill-title:after{
+  .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+       width: 35px;
+
+
+  }
+
+  .skill-box:hover .img{
+    transform: translateY(-10px);
+  }
+
+  .skill-title:after{
     content: '';
     position: absolute;
     bottom: 0;
     right: 50%;
-    width: 35px;
-    height: 8px;
-    background-color: #e90a0a;
-  } */
+    width: 0px;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+    transition: .5s;
+  }
 
-  /* .skill-title:before{
+  .skill-title:before{
     content: '';
     position: absolute;
     bottom: 0;
     left:50%;
-    width: 35px;
+    width: 0px;
     height: 4px;
-    background-color: #FFED00;
-  } */
+    border-radius: 0 2px 2px 0;
+    background-color:#2ecc71;
+    transition: .5s;
+  }
 
   .skill-title h3{
-  color: #3d535f;
+  color:#000;
     margin: 0.5rem;
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Golos Text', sans-serif;
   }
 
 
@@ -454,6 +471,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
   }
 
 .img:after{
@@ -463,6 +481,13 @@
   left: 0;
   width: 50%;
   height: 110px;
-  background: rgba(100,100,100,0.5);
+  /* background: #F94A29; */
   border-radius: 50px 0 0 50px;
+}
+
+@media screen and (max-width:786px ){
+  .container0{
+    grid-template-columns: repeat(2,1fr);
+    padding: 2rem 50px;
+  }
 }
