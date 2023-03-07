@@ -104,6 +104,7 @@
   .nav-symbols li{
     list-style: none;
     margin: 0 20px;
+    border-radius: 45%;
     
   }
 
@@ -119,6 +120,35 @@
     font-size: 20px;
     text-decoration: none;
     color: #000;
+    margin-top: 10px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    line-height: 1;
+  }
+
+
+  .nav-symbols li{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border-radius: 45px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    margin-top: 10px;
+  }
+
+  .nav-symbols li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50px;
+    /* background: #F94A29; */
+    border-radius: 50px 0 0 50px;
   }
 
   .nav-symbols li:hover a{
