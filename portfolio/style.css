@@ -44,7 +44,10 @@
     /* background:  linear-gradient(45deg,#FFED00,#F94A29); */
     background: #a9b1bc;
     
+    
   }
+
+  
 
   .logo{
     display: flex;
@@ -64,6 +67,7 @@
   .navItems{
     
     display: flex;
+    
 
   }
 
@@ -81,10 +85,18 @@
     font-weight: 200;
     position: relative;
     font-family: 'Golos Text', sans-serif;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    line-height: 1;
   }
 
   .navItems li:hover a{
     color: #F94A29;
+  }
+
+  .navItems li a:hover{
+    box-shadow: 0 -2px 0px #F94A29 inset;
+    
   }
 
  
