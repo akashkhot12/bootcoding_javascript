@@ -90,6 +90,8 @@
     line-height: 1;
   }
 
+ 
+
   .navItems li:hover a{
     color: #F94A29;
   }
@@ -98,6 +100,32 @@
     box-shadow: 0 -2px 0px #F94A29 inset;
     
   }
+
+  .nav-symbols li{
+    list-style: none;
+    margin: 0 20px;
+    
+  }
+
+
+
+  .nav-symbols {
+    display: flex;
+    
+  }
+
+  .nav-symbols li a{
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  .nav-symbols li:hover a{
+    color: #F94A29;
+  }
+
+  
 
  
 
