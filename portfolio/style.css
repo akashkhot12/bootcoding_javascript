@@ -348,7 +348,7 @@
 
   .heading{
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     text-transform: capitalize;
    
 
@@ -368,15 +368,15 @@
 
   .heading h1{
     font-size: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
     font-family: 'Golos Text', sans-serif;
-    padding-bottom:1rem; ;
+    padding-bottom:1rem; 
     position: relative;
   }
 
   .heading button{
     font-size: 15px;
-    margin-bottom: 50px;
+    /* margin-bottom: 5px; */
   }
 
   .about-us{
@@ -436,14 +436,15 @@
 
 
   .skills{
-    background-color: #f3f5f8;
+    
     margin-top: 50px;
     margin-top: 50px;
     text-transform: capitalize;
   }
 
   .inner{
-    padding-top: 20px;
+    padding-top: 50px;
+   
   }
 
   .header0 h1{
@@ -454,7 +455,7 @@
 
   .header0{
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
     position: relative;
   }
 
@@ -465,7 +466,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: 4px;
-    width: 150px;
+    width: 370px;
     background-color: #F94A29;
    
     }
@@ -600,3 +601,42 @@
     margin: 6px 0;
   }
 }
+
+
+/* contact */
+
+
+.contact{
+  
+  margin-top: 50px;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.inner-contact{
+  
+}
+
+.con-main h1{
+  font-family: 'Golos Text', sans-serif;
+}
+.con-main h1 span{
+  color: #F94A29;}
+
+.con-main{
+  text-align: center;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.con-main::after{
+   content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 450px;
+  background-color: #F94A29;
+ 
+  }
