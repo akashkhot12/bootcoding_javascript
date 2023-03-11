@@ -1,0 +1,13 @@
+ { 
+    "name":"akash",
+    "age":21,
+    "is_student":true,
+    "passport_no":null,
+    "plang":["c","c++","java","python"],
+    "address":{
+        "city":"delhi",
+        "state":"new delhi",
+        "pincode":10140
+              }
+}
+ 
