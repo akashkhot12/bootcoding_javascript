@@ -11,3 +11,12 @@
    console.log(jdata);
   
 // tranfer object data into a json formate
+
+
+
+
+
+
+
+
+

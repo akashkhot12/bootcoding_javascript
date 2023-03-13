@@ -9,27 +9,8 @@
         "state":"new delhi",
         "pincode":10140
               }
-}
+   }
 
-// in array function json
 
-{
-    "student": [
-        {
-            "name":"akash",
-            "age" :23
-        }
-        
-        {
-            "name":"vishal",
-            "age" :53
-        }
-
-        {
-            "name":"jhon",
-            "age" :13
-        }
-    ]
-
-}
+ 
  
