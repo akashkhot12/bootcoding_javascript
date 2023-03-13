@@ -1,8 +1,19 @@
 let text = '{ "employees" : [' +
-' { "firstName":"John" , "lastName":"Doe" },' +
-' { "firstName":"Anna" , "lastName":"Smith" },' +
-' { "firstName":"Peter" , "lastName":"Jones" } ]}';
+' { "firstName":"John" , "lastName":"Doe", "technology":"Javascript" },' +
+' { "firstName":"Anna" , "lastName":"Smith", "technology":"Javascript" },' +
+' { "firstName":"Peter" , "lastName":"Jones", "technology":"Java" } ]}';
 
 
 const obj = JSON.parse(text);
-console.log(text);
+//console.log(obj);
+//console.log(text);
+getEmployeeByTechnology(obj, "Javascript");
+
+function getEmployeeByTechnology(obj, technology){
+
+    obj.employees.forEach(element => {
+        if(element.technology == technology){
+            console.log(element)
+        }
+    });
+}
