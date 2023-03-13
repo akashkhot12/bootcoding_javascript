@@ -7,19 +7,28 @@ let array = '{ "employees" : [' +
 ' { "firstName":"jack" , "lastName":"walge", "technology":"python" ,"sallary":"3500" , "experience":1 },' +
 ' { "firstName":"ria" , "lastName":"walter", "technology":"python" ,"sallary":"2500" , "experience":1 },' +
 ' { "firstName":"brock" , "lastName":"burg", "technology":"python" ,"sallary":"3500" , "experience":3 },' +
-' { "firstName":"devid" , "lastName":"maika", "technology":"python" ,"sallary":"2500" , "experience":1},' +
-' { "firstName":"jack" , "lastName":"watson", "technology":"react" ,"sallary":"3500" , "experience":2} ]}';
+' { "firstName":"devid" , "lastName":"maika", "technology":"python" ,"sallary":"2500" , "experience":1.5},' +
+' { "firstName":"jack" , "lastName":"watson", "technology":"react" ,"sallary":"3500" , "experience":2.5} ]}';
 
 const stat = JSON.parse(array)
 // console.log(stat);
 // console.log(array);
-getElementByExperience(stat,"2")
+// getElementByExperience(stat,"2");
+getElementByTechnology(stat,"python","Java")
 
 
 //find static experience
 function getElementByExperience(stat,experience) {
     stat.employees.forEach(element => {
-        if(element.experience <= experience){
+        if(element.experience >= experience ){
+            console.log(element)
+        }
+    });
+}
+
+function getElementByTechnology(stat,technology1,technology2) {
+    stat.employees.forEach(element => {
+        if(element.technology == technology1 || element.technology==technology2){
             console.log(element)
         }
     });
