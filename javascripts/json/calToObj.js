@@ -14,7 +14,7 @@ const stat = JSON.parse(array)
 // console.log(stat);
 // console.log(array);
 // getElementByExperience(stat,"2");
-getElementByTechnology(stat,"python","Java")
+getElementByTechnology(stat,"python","Java","react")
 
 
 //find static experience
@@ -26,9 +26,11 @@ function getElementByExperience(stat,experience) {
     });
 }
 
-function getElementByTechnology(stat,technology1,technology2) {
+// print java or python 
+
+function getElementByTechnology(stat,technology1,technology2,technology3) {
     stat.employees.forEach(element => {
-        if(element.technology == technology1 || element.technology==technology2){
+        if(element.technology == technology1 || element.technology==technology2 || element.technology==technology3){
             console.log(element)
         }
     });
