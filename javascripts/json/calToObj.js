@@ -15,7 +15,8 @@ const stat = JSON.parse(array)
 // console.log(array);
 // getElementByExperience(stat,"2");
 // getElementByTechnology(stat,"python","Java","react")
-getElementBySallary(stat,"1500","2500")
+// getElementBySallary(stat,"1500","2500")
+getElementByNameIdentity(stat,"Jones")
 
 
 //find static experience
@@ -45,5 +46,16 @@ function getElementBySallary(stat,sallary1,sallary2){
         if(element.sallary <= sallary1 || element.sallary >= sallary2){
             console.log(element);
         }
+    })
+}
+
+
+
+// static name find in list json 
+function getElementByNameIdentity(stat,lastname) {
+        stat.employees.forEach(element => {
+            if(element.lastName == lastname ){
+                console.log(element);
+            }
     })
 }
