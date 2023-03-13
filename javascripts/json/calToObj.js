@@ -13,11 +13,11 @@ let array = '{ "employees" : [' +
 const stat = JSON.parse(array)
 // console.log(stat);
 // console.log(array);
-getElementBySallary(stat,"2")
+getElementByExperience(stat,"2")
 
 
-// find min to max static experience
-function getElementBySallary(stat,experience) {
+//find static experience
+function getElementByExperience(stat,experience) {
     stat.employees.forEach(element => {
         if(element.experience <= experience){
             console.log(element)
