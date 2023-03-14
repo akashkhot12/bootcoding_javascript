@@ -48,3 +48,21 @@ h1{
     font-size: larger;
     cursor: pointer;
 }
+
+.main-contain{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top:35%;
+    background: linear-gradient(35deg,#62CDFF 50%, #97DEFF 50%);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+.main-contain > .main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
