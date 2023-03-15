@@ -28,16 +28,19 @@ function createUserCard(user) {
     <div class="card">
         <div>
         <img src="${user.avatar_url}" alt="${user.name}" class="avatar">
+         <ul id="unlist">
+                <li>${user.followers} <strong>Followers</strong></li>
+                <li>${user.following} <strong>Following</strong></li>
+                <li>${user.public_repos} <strong> Repositories</strong></li>
+            </ul>
         </div>
         <div class="user-info">
             <h2>${userID}</h2>
             ${userBio}
-            <ul>
-                <li>${user.followers} <strong>Followers</strong></li>
-                <li>${user.following} <strong>Following</strong></li>
-                <li>${user.public_repos} <strong>Repos</strong></li>
-            </ul>
+            
         <div id="repos"></div>
+
+            
     </div>
     </div>
     `

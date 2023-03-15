@@ -1,37 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Rampart+One&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dosis:wght@200&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Rampart+One&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
+
+
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 body {
-  background-color: #EDEDED;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-25deg,#19A7CE  50%, #146C94 50%);
+ 
 }
+
+.git-hub{
+  position: absolute;
+    top:1%;
+  height: 300px;
+  width: 300px;
+}
+
+
 .user-form {
-  width: 100%;
-  max-width: 700px;
+  position: absolute;
+    width: 600px;
+    height: 70px;
+    top:15%;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+   
 }
+
 .user-form input {
-  width: 100%;
-  display: block;
-  background-color: #4C2885;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  font-family: inherit;
-  font-size: 1rem;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  height: 60px;
+  border:none;
+  outline: none;
+  font-size: 35px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: black;
+  border-radius: 5%;
+  
 }
+
 .user-form input::placeholder {
   color: #bbb;
 }
@@ -39,53 +63,77 @@ body {
   outline: none;
 }
 .card {
+  left: 500px;
+  position: absolute;
+  height: 400px;
   max-width: 800px;
-  background-color: #4C2885;
+  bottom:80px;
+  background: linear-gradient(25deg,#146C94 50%, #19A7CE 50%);
   border-radius: 20px;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 10px #80cbee,
+  0 15px 40px rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 3rem;
   margin: 0 1.5rem;
+  color: #F6F1F1;
 }
 .avatar {
   border-radius: 50%;
-  border: 10px solid #2A2A72;
-  height: 150px;
-  width: 150px;
+  border: 10px solid #19A7CE;
+  height:250px;
+  width: 250px;
 }
 .user-info {
-  color: #eee;
+  color: #F6F1F1;
   margin-left: 2rem;
 }
 .user-info h2 {
   margin-top: 0;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  font-family: 'Rampart One', cursive;
+ 
 }
-.user-info ul {
+
+
+.card ul {
   list-style-type: none;
-  display: flex;
+
   justify-content: space-between;
   padding: 0;
   max-width: 400px;
 }
-.user-info ul li {
+.card ul li {
+  top: 83%;
+  font-family: 'Dosis', sans-serif;
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
+  margin-left: 0.1rem;
+  margin-bottom: 0.1rem;
+  letter-spacing: 3px;
 }
-.user-info ul li strong {
-  font-size: 0.9rem;
-  margin-left: 0.5rem;
+.card ul li strong {
+  font-family: 'Dosis', sans-serif;
+  display: inline-block;
+  display: flex;
+  font-size: 1.3rem;
+  margin-left: 0.1rem; 
+  letter-spacing: 3px;
+  border-radius: 5%;
+  letter-spacing: 10px;
 }
 .repo {
-  text-decoration: none;
-  color: #fff;
-  background-color: #212A72;
-  font-size: 0.7rem;
-  padding: 0.25rem 0.5rem;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  display: inline-block;
+  text-decoration:dotted;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 0.30rem 0.1rem;
+  margin-right: 0.1rem;
+  margin-bottom: 0.1rem;
+  display: block;
+  font-family: 'Righteous', cursive;
 }
+
 @media (max-width: 500px) {
   .card {
     flex-direction: column;
