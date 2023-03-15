@@ -12,19 +12,20 @@ body{
     align-items: center;
     background: linear-gradient(-25deg,#62CDFF 50%, #97DEFF 50%);
 }
-h1{
-    position: absolute;
-    top:15%;
-    font-size:40px;
-    color: black;
-    
+
+.git-hub{
+  position: absolute;
+    top:1%;
+  height: 300px;
+  width: 300px;
 }
+
 
 .box{
     position: absolute;
     width: 700px;
     height: 70px;
-    top:25%;
+    top:15%;
     background-color: white;
     border-radius: 30px;
     display: flex;
@@ -41,6 +42,7 @@ h1{
     font-size: 35px;
     padding-right: 15px;
     padding-left: 15px;
+    color: black;
     
 }
 
@@ -48,3 +50,5 @@ h1{
     font-size: larger;
     cursor: pointer;
 }
+
+
