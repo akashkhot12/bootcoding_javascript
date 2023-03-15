@@ -18,7 +18,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-25deg,#19A7CE  50%, #146C94 50%);
+  background: linear-gradient(-25deg,#E5D1FA  50%, #E3DFFD 50%);
  
 }
 
@@ -40,6 +40,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    box-shadow: 0 5px 10px #383838,
    
 }
 
@@ -53,6 +54,7 @@ body {
   padding-left: 15px;
   color: black;
   border-radius: 5%;
+  box-shadow: 0 5px 10px #383838,
   
 }
 
@@ -63,19 +65,19 @@ body {
   outline: none;
 }
 .card {
-  left: 500px;
+  left: 520px;
   position: absolute;
   height: 400px;
   max-width: 800px;
   bottom:80px;
-  background: linear-gradient(90deg,#3F497F 10%, #CCD5AE 50%);
+  background: linear-gradient(25deg ,#2D2727 30%,#413543 50%);
   border-radius: 20px;
-  box-shadow: 0 5px 10px #80cbee,
+  box-shadow: 0 5px 10px #6f6363,
   0 15px 40px rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 3rem;
   margin: 0 1.5rem;
-  color: #F6F1F1;
+  color: #fff;
 }
 .avatar {
   border-radius: 50%;
@@ -84,7 +86,7 @@ body {
   width: 250px;
 }
 .user-info {
-  color: #000;
+  color: #fff;
   margin-left: 2rem;
 }
 .user-info h2 {
@@ -125,7 +127,7 @@ body {
 }
 .repo {
   text-decoration:dotted;
-  color: #000000;
+  color: #fff;
   font-size: 1.2rem;
   padding: 0.30rem 0.1rem;
   margin-right: 0.1rem;
