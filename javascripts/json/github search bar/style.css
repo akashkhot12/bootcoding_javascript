@@ -68,7 +68,7 @@ body {
   height: 400px;
   max-width: 800px;
   bottom:80px;
-  background: linear-gradient(25deg,#146C94 50%, #19A7CE 50%);
+  background: linear-gradient(90deg,#3F497F 10%, #CCD5AE 50%);
   border-radius: 20px;
   box-shadow: 0 5px 10px #80cbee,
   0 15px 40px rgba(0, 0, 0, 0.1);
@@ -84,7 +84,7 @@ body {
   width: 250px;
 }
 .user-info {
-  color: #F6F1F1;
+  color: #000;
   margin-left: 2rem;
 }
 .user-info h2 {
