@@ -44,11 +44,18 @@
 
 
 //some: Check if some of the elements are similar in one aspect. It returns boolean
-const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-const bools = [true, true, true, true]
+// const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+// const bools = [true, true, true, true]
 
-const areSomeTrue = bools.some((b) =>  b === true)
+// const areSomeTrue = bools.some((b) =>  b === true)
 
-console.log(areSomeTrue) //true
-const areAllStr = names.some((name) => typeof name === 'number') // Are all strings ?
-console.log(areAllStr) // false
+// console.log(areSomeTrue) //true
+// const areAllStr = names.some((name) => typeof name === 'number') // Are all strings ?
+// console.log(areAllStr) // false
+
+
+//sort: The sort methods arranges the array elements either ascending or descending order. By default, the sort() method sorts values as strings.This works well for string array items but not for numbers. If number values are sorted as strings and it give us wrong result. Sort method modify the original array. It is recommended to copy the original data before you start using sort method.
+//Sorting string values
+const products = ['Milk', 'Coffee', 'Sugar', 'Honey', 'Apple', 'Carrot']
+console.log(products.sort()) // ['Apple', 'Carrot', 'Coffee', 'Honey', 'Milk', 'Sugar']
+//Now the original products array  is also sorted
