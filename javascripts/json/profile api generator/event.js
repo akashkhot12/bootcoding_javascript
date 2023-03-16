@@ -21,16 +21,12 @@ console.log("hello");
 
 // console.log(countries.slice(0,5));
 
+var ages=[18,19,20,22,50]
 
-let countrie=['ALBANIA', 'BOLIVIA', 'CANADA', 'DENMARK', 'ETHIOPIA', 'FINLAND', 'GERMANY', 'HUNGARY', 'IRELAND', 'JAPAN', 'KENYA']
+var b=ages.filter(younger);
+console.log(b);
 
-const allcountry = countrie;
-function countriesFirstFiveLetters(){
-let   a= allcountry.map(countrie);
-    a.toUpperCase().slice(0,5)
-    console.log(a) ;
-
+function younger(age){
+    return age<=22;
 }
-
-countriesFirstFiveLetters();
 
