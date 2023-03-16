@@ -1,5 +1,3 @@
-console.log("hello");
-
 
 // const search = document.querySelector('#search');
 // const btn = document.querySelector('#click')
@@ -32,12 +30,25 @@ console.log("hello");
 //     return age<=22;
 // }
 
+
+// findindex methode
+// const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+// const ages = [24, 22, 25, 32, 35, 18]
+
+// const result = names.findIndex((name) => name.length > 7)
+// console.log(result) // 0
+
+// const age = ages.findIndex((age) => age < 20)
+// console.log(age) 
+
+
+
+//some: Check if some of the elements are similar in one aspect. It returns boolean
 const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
-const ages = [24, 22, 25, 32, 35, 18]
+const bools = [true, true, true, true]
 
-const result = names.findIndex((name) => name.length > 7)
-console.log(result) // 0
+const areSomeTrue = bools.some((b) =>  b === true)
 
-const age = ages.findIndex((age) => age < 20)
-console.log(age) 
-
+console.log(areSomeTrue) //true
+const areAllStr = names.some((name) => typeof name === 'number') // Are all strings ?
+console.log(areAllStr) // false
