@@ -21,12 +21,23 @@ console.log("hello");
 
 // console.log(countries.slice(0,5));
 
-var ages=[18,19,20,22,50]
 
-var b=ages.filter(younger);
-console.log(b);
+// ussing filter method
+// var ages=[18,19,20,22,50]
 
-function younger(age){
-    return age<=22;
-}
+// var b=ages.filter(younger);
+// console.log(b);
+
+// function younger(age){
+//     return age<=22;
+// }
+
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const ages = [24, 22, 25, 32, 35, 18]
+
+const result = names.findIndex((name) => name.length > 7)
+console.log(result) // 0
+
+const age = ages.findIndex((age) => age < 20)
+console.log(age) 
 
