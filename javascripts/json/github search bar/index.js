@@ -2,6 +2,9 @@ const APIURL = 'https://api.github.com/users/'
 const main = document.getElementById('main')
 const form = document.getElementById('form') 
 const search = document.getElementById('search')
+
+// getting data and serchng data
+
 async function getUser(username) {
     try {
         const { data } = await axios(APIURL + username)
@@ -13,6 +16,10 @@ async function getUser(username) {
         }
     }
 }
+
+
+
+// repository getting method
 async function getRepos(username) {
     try {
         const { data } = await axios(APIURL + username + '/repos?sort=created')
@@ -21,6 +28,9 @@ async function getRepos(username) {
         createErrorCard('Problem fetching repos')
     }
 }
+
+// open message box 
+
 function createUserCard(user) {
     const userID = user.name || user.login
     const userBio = user.bio ? `<p>${user.bio}</p>` : ''
@@ -47,6 +57,11 @@ function createUserCard(user) {
     console.log(cardHTML);
     main.innerHTML = cardHTML
 }
+
+
+
+// error card function
+
 function createErrorCard(msg) {
     const cardHTML = `
         <div class="card">
@@ -55,6 +70,9 @@ function createErrorCard(msg) {
     `
     main.innerHTML = cardHTML
 }
+
+// details of reposatory
+
 function addReposToCard(repos) {
     const reposEl = document.getElementById('repos')
     repos.slice(0, 5).forEach(repo => {
@@ -66,6 +84,8 @@ function addReposToCard(repos) {
         reposEl.appendChild(repoEl)
     })
 }
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     const user = search.value
