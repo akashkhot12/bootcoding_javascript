@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getPersonInfo = ({
+  firstName,
+  lastName,
+  age,
+  country,
+  job,
+  skills,
+  languages
+}) => {
+  const formattedSkills = skills.slice(0, -1).join(', ')
+  const formattedLanguages = languages.slice(0, -1).join(', ')
+
+  personInfo = `${firstName} ${lastName} lives in ${country}. He is ${age} years old. He is an ${job}. He teaches ${formattedSkills} and ${
+    skills[skills.length - 1]
+  }. He speaks ${formattedLanguages} and a little bit of ${languages[2]}.`
+
+  return personInfo
+}
+console.log(getPersonInfo(person))
+    </script>
+</body>
+</html>
