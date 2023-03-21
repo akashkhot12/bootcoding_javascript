@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-25deg,#38E54D  40%, #9CFF2E 60%);
+  background: linear-gradient(-25deg,#FFC3A1  40%, #A75D5D 60%);
  
 }
 
@@ -69,7 +69,7 @@ body {
   height: 400px;
   max-width: 800px;
   bottom:80px;
-  background: linear-gradient(25deg ,#38E54D 20%,#9CFF2E 50%);
+  background: linear-gradient(25deg ,#A75D5D 20%,#FFC3A1 50%);
   border-radius: 20px;
   box-shadow: 0 5px 10px #000000,
   0 15px 40px rgba(0, 0, 0, 0.1);
