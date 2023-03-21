@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Rampart+One&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dosis:wght@200&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Rampart+One&family=Righteous&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dosis:wght@200&family=Golos+Text:wght@500&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@300&family=Noto+Sans+JP:wght@500&family=Oswald:wght@500&family=Poppins:wght@300;400;500;600;700;800;900&family=Rampart+One&family=Righteous&family=Roboto+Slab:wght@200;300;400&family=Shantell+Sans:wght@300&family=Tilt+Prism&family=Ubuntu:wght@300&display=swap');
 
 
 
@@ -18,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(-25deg,#E5D1FA  50%, #E3DFFD 50%);
+  background: linear-gradient(-25deg,#38E54D  40%, #9CFF2E 60%);
  
 }
 
@@ -40,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
-    box-shadow: 0 5px 10px #383838,
+    box-shadow: 0 5px 10px #FFACAC,
    
 }
 
@@ -70,70 +69,71 @@ body {
   height: 400px;
   max-width: 800px;
   bottom:80px;
-  background: linear-gradient(25deg ,#2D2727 30%,#413543 50%);
+  background: linear-gradient(25deg ,#38E54D 20%,#9CFF2E 50%);
   border-radius: 20px;
-  box-shadow: 0 5px 10px #6f6363,
+  box-shadow: 0 5px 10px #000000,
   0 15px 40px rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 3rem;
-  margin: 0 1.5rem;
-  color: #fff;
+  margin: 0 2.9rem;
+  color: #000;
 }
 .avatar {
   border-radius: 50%;
-  border: 10px solid #19A7CE;
-  height:250px;
-  width: 250px;
+  border: 15px solid #000;
+  height:200px;
+  width: 200px;
+  margin-bottom: 15px;
 }
 .user-info {
-  color: #fff;
+  color: #000;
   margin-left: 2rem;
 }
 .user-info h2 {
   margin-top: 0;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
-  font-family: 'Rampart One', cursive;
+  font-size: 2.9rem;
+  letter-spacing: 2px;
+  font-family: 'Roboto Slab', serif;
  
 }
 
 
 .card ul {
   list-style-type: none;
-
+   margin: 5px;
   justify-content: space-between;
   padding: 0;
   max-width: 400px;
 }
 .card ul li {
   top: 83%;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto Slab', serif;
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
   margin-left: 0.1rem;
   margin-bottom: 0.1rem;
   letter-spacing: 3px;
 }
 .card ul li strong {
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Roboto Slab', serif;
   display: inline-block;
   display: flex;
-  font-size: 1.3rem;
-  margin-left: 0.1rem; 
-  letter-spacing: 3px;
+  font-size: 1.0rem;
+  margin-left: 0.5rem; 
+  /* letter-spacing: 5px; */
   border-radius: 5%;
-  letter-spacing: 10px;
+  
 }
 .repo {
   text-decoration:dotted;
-  color: #fff;
-  font-size: 1.2rem;
+  color: #000;
+  font-size: 0.9rem;
   padding: 0.30rem 0.1rem;
   margin-right: 0.1rem;
   margin-bottom: 0.1rem;
   display: block;
-  font-family: 'Righteous', cursive;
+  font-family: 'Roboto Slab', serif;
 }
 
 @media (max-width: 500px) {
