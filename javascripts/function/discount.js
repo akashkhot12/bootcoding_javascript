@@ -6,4 +6,5 @@ var discountPercent = ((listingPrice - sellingPrice)/listingPrice)*100;
 
 displayDiscountPercentage= Math.round(discountPercent);
 
+
 console.log(displayDiscountPercentage + "% off");
