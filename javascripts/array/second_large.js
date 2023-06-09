@@ -22,6 +22,7 @@ for(let i=0;i<a.length;i++)
 {
     if (max<a[i])
      {
+        
         sd_max=max;
         max=a[i];        
     }
