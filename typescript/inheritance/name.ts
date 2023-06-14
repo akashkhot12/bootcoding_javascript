@@ -1,10 +1,17 @@
-class child{
-    name="akash khot"
+class Parents{
+    name;
+    setName(name){
+        this.name=name
+    }
+}
+class Child extends Parents{
 
-    getvalue(){
+    getName(){
         return this.name;
     }
 }
-    let a1=new child();
-    a1.getvalue();
+    let a1=new Child();
+    a1.setName("akash khot")
+   console.log( a1.getName());
+   
     
