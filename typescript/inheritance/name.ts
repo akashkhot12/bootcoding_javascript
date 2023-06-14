@@ -4,8 +4,7 @@ class child{
     getvalue(){
         return this.name;
     }
-
-    let a1=new child();
-    a1.getvalue()
-    
 }
+    let a1=new child();
+    a1.getvalue();
+    
