@@ -33,5 +33,16 @@ var eating = /** @class */ (function (_super) {
     };
     return eating;
 }(Animal));
-var h1 = new eating("leopard");
+var feature = /** @class */ (function (_super) {
+    __extends(feature, _super);
+    function feature() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    feature.prototype.walk = function () {
+        _super.prototype.walk.call(this);
+        console.log(this.area + " it has been fastest animal in Jungle");
+    };
+    return feature;
+}(eating));
+var h1 = new feature("leopard");
 h1.walk();

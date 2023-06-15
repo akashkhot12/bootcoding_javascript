@@ -20,5 +20,12 @@ class eating extends Animal{
     }
 }
 
-let h1=new eating("leopard");
+class feature extends eating{
+    walk(){
+        super.walk();
+        console.log(this.area+" it has been fastest animal in Jungle")
+    }
+}
+
+let h1=new feature("leopard");
 h1.walk();
