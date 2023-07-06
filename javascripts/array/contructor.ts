@@ -8,7 +8,6 @@ class observe{
         this.secondName=secondName;
         this.age=age;
     }
-
     getFirstName(){
         console.log("my first name is" +this.firstName);
         
