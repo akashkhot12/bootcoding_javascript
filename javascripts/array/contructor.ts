@@ -10,7 +10,6 @@ class observe{
     }
     getFirstName(){
         console.log("my first name is" +this.firstName);
-        
     }
 }
 let ob = new observe("akash","khot",25);
