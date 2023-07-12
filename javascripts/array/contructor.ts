@@ -2,6 +2,7 @@ class observe{
     firstName:string;
     secondName:string;
     age:number;
+    
     constructor(firstName:string, secondName:string, age:number){
         this.firstName=firstName;
         this.secondName=secondName;
