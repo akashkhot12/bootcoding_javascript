@@ -13,6 +13,5 @@ class observe{
         
     }
 }
-
 let ob = new observe("akash","khot",25);
 ob.getFirstName();
