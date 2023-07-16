@@ -5,20 +5,20 @@
 // console.log(calling(30,40))
 
 
-
 class App{
-    name
+    name:"akash khot" 
+   
+    constructor(){
 
-    constructor(name){
-        this.name=name
     }
+   
     getName(){
         console.log(this.name)
     }
 }
 
-let a1 = new App("akash");
-a1.getName();
+let a1=new App();
+console.log(a1.getName())
 
 
 
