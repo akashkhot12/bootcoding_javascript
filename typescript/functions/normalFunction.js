@@ -1,4 +1,4 @@
-function calcu() {
-    return typeof (33);
+function calling(a, b) {
+    return a + b;
 }
-console.log(calcu());
+console.log(calling(30, " its a age"));
