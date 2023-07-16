@@ -1,5 +1,5 @@
-function calling(a:number,b:string):string{
-    return a+b
+function calling(a:number,b?:number):number{
+    return b?a*b:a
 }
-console.log(calling(30," its a age"))
+console.log(calling(30,40))
 
