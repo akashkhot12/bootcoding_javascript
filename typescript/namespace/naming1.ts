@@ -5,6 +5,5 @@ namespace print{
         }
     }
 }
-
 let l1=new print.lable();
 console.log(l1.lableprint());
