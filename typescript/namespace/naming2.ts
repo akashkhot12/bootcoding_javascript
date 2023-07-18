@@ -8,5 +8,7 @@ namespace system{
         }
     }
 }
+
+
 let s1=new system.computerCycle();
 console.log(s1.computerParts());
