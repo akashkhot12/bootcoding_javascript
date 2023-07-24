@@ -6,3 +6,6 @@ function yourAGe(age){
     console.log("your rem days is "+days + " , your rem weeks is "+weeks+ " , your rem months is "+months);
 }
 yourAGe(23);
+
+
+
