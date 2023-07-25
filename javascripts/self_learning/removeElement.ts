@@ -13,12 +13,12 @@
 
 
 
-let nums:any[] = [3,2,2,3];
-let number = 3;
- for(let i=0;i<=nums.length;i++){
-      if (number==nums[i]) {
-          nums.splice(i,1) ;
+let nu = [3,2,2,3];
+let numb = 3;
+ for(let i=0;i<=nu.length;i++){
+      if (numb==nu[i]) {
+          nu.splice(i,1) ;
           i-- 
       }
-  console.log(nums.length);
+  console.log(nu.length);
  }
