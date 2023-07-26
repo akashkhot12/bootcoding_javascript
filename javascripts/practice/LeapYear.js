@@ -1,4 +1,4 @@
-function LeapYear(year){
+function isLeap(year){
     if (year%4==0) {
        if(year%100==0){
         if(year%400==0){
@@ -17,7 +17,7 @@ function LeapYear(year){
         FalseStatement();
     }
 }
-let leapOrNot = LeapYear (1245);
+let leapOrNot = isLeap (1245);
 
 function statement(){
     console.log(
