@@ -4,4 +4,4 @@ function replace(string){
  str.splice(1,1,"a")
     console.log(str.join(""));
 }
-let ak = replace("xyz")
+let ak = replace("xyza")
