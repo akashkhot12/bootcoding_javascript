@@ -20,6 +20,5 @@ function getValue(number){
              }
     }
 }
-
   let factorial = getValue(-1)
 
