@@ -5,3 +5,9 @@ function replace(string){
     console.log(str.join(""));
 }
 let ak = replace("xyza")
+
+
+
+// var ele="xyz"
+// str1 = ele.replace("y","a")
+// // console.log(str1);another methode
