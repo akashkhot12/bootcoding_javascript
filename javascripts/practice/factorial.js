@@ -16,9 +16,10 @@ function getValue(number){
         else{
              for(let index =1; index<=number;index++){
              fact=fact*index;
-             console.log(fact);
+             
              }
+             console.log("the factorial of "+number + " is = " +fact);
     }
 }
-  let factorial = getValue(-1)
+  let factorial = getValue(5)
 
