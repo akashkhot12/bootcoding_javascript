@@ -1,5 +1,6 @@
-let array = ["akash","rahul" ,"vinode","yash"]
+let array = [1,2,3,4,5]
 
-array.forEach(function(value,i){
-    console.log(i +" = "+value);
+array.forEach(function(value,index){
+    let res = index + 100;
+    console.log(res);
 })
