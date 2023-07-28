@@ -3,3 +3,4 @@ array.forEach(function(value,index){
     let res = index + 100;
     console.log(res);
 })
+
