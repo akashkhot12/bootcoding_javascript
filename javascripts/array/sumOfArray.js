@@ -5,6 +5,16 @@ function Sum(n) {
         sum +=rem;
         n = Math.floor(n/10)
     }
-console.log(sum);
+return(sum);
 }
-Sum(123)
+
+function SumOfDigit(array) {
+    let finalArray = [],result;
+    for (let index = 0; index < array.length; index++) {
+        result = Sum(array[index]);
+        finalArray.push(result)
+    }
+    return finalArray;
+}
+
+console.log(SumOfDigit([123,234,345,456]));
