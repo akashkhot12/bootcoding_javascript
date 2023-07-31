@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2344/2344132.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- CSS -->
+
+
+
+<!-- HTML -->
+
+<body>
+    <div class="container" >
+        <div class="calculator">
+            <input type="text" id="ipt" placeholder="0">
+            <button onclick="clr()">CE</button>
+            <button onclick="del()">C</button>
+            <button onclick="display('%')">%</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('*')">X</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('.')">•</button>
+            <button onclick="display('0')">0</button>
+            <button onclick="total() " class="equal">=</button>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+
+    <script>
+        let button = document.getElementById("ipt");
+
+        function display(num){
+            button.value += num ;
+        }
+
+        function total(){
+    try{
+        button.value =eval(button.value);
+    }
+    catch(error){
+        alert("Invalid ");
+    }  
+}
+
+function clr(){
+    button.value=" ";
+}
+
+function del(){
+    button.value = button.value.slice(0,-1);
+}
+    </script>
+
+</body>
+</html>
