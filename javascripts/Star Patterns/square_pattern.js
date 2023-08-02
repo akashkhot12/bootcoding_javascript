@@ -1,3 +1,4 @@
+// sqaure star pattern
 const pattern = (n,p)=>{
     let string = ""
     for (let index = 1; index <=n;index++) {
