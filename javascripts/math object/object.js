@@ -14,5 +14,11 @@
 // console.log(Math.min(1,2,3,-45,));
 
 
-let value  = Math.random()*100;
-console.log(value);
+// let value  = Math.random()*100;
+// console.log(value);
+
+
+
+// absoulet value
+
+console.log(Math.abs(-90))
