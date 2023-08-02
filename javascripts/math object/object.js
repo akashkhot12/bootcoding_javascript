@@ -17,8 +17,7 @@
 // let value  = Math.random()*100;
 // console.log(value);
 
-
-
 // absoulet value
 
-console.log(Math.abs(-90))
+// console.log(Math.abs(-90))
+
