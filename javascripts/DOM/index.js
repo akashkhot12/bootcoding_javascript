@@ -1,6 +1,7 @@
 let h1 = document.getElementById('heading');
+let btn = document.querySelector('.btn')
 
-h1.addEventListener('click',()=>{
+btn.addEventListener('click',()=>{
     h1.innerHTML = "Chal bhaag";
 })
 
