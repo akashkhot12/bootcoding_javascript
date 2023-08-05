@@ -14,7 +14,6 @@ const b =document.querySelector('#btn')
 //         }
 //     })
 // }
-
 // getData()
 
 
@@ -24,10 +23,16 @@ const b =document.querySelector('#btn')
 
 let para  = document.querySelector('#change');
 
-para.addEventListener('click',()=>{
+// para.addEventListener('click',()=>{
+//     para.style.color = "red";
+//     para.style.fontSize = "60px";
+// })
+
+para.addEventListener('mouseover',()=>{
     para.style.color = "red";
-    para.style.fontSize = "60px";
 })
 
+para.addEventListener('mouseout',()=>{
+    para.style.color = "black";
+})
 
-console.log("events");
