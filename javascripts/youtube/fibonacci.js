@@ -15,4 +15,4 @@ else{
 }
 return array
 }
-    console.log(fibonacciGenerator(10));
+console.log(fibonacciGenerator(10));
