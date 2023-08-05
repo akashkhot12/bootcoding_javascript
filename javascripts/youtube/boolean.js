@@ -5,4 +5,6 @@
 
 
 let z=[1,2,3,4]
-console.log(...z);
+z = z.indexOf(2);
+
+console.log(z);
