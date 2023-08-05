@@ -22,4 +22,4 @@ function findFibo(value){
     console.log(temp);
 }
 }
-findFibo(5)
+findFibo(140)

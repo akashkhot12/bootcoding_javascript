@@ -1,15 +1,19 @@
 function fibonacciGenerator (n) {
-    //Do NOT change any of the code above 👆
-        
-        //Write your code here:
-        
-        
-        
-        
-        
-        
-        
-        //Return an array of fibonacci numbers starting from 0.
-        
-    //Do NOT change any of the code below 👇
+    let array = []
+ if(n===1){
+    array=[0]
+ }
+else if (n===2){
+    array = [0,1]
+}
+else{
+    array = [0,1];
+
+    for (let index = 2; index <= n; index++) {
+        array.push(array[array.length-2]+array[array.length-1])
     }
+}
+return array
+}
+
+    console.log(fibonacciGenerator(5));
