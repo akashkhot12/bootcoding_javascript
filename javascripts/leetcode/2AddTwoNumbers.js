@@ -15,6 +15,9 @@ l2 = parseInt(l2)
 
 let res = l1+l2;
 // console.log(res); 807;
+let arrayOfDigits = Array.from(String(res), Number);
+arrayOfDigits = arrayOfDigits.reverse();
+console.log(arrayOfDigits);
 
 
 
