@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+  <head>
+  </head>
+  <select id="AllCustomers">
+  </select>
+
+  <input type="button" onclick="ShowCX()" value="submit" />
+
+
+  <p> Location: <span id="display_message"></span> </p>
+  <p> Ratings: <span id="display_message2"></span> </p>
+<script>
+    var Comp = [{
+    Name: "Akash",
+    Location: "India ",
+    Ratings: "*****"
+  },
+  {
+    Name: "JOY",
+    Location: "US ",
+    Ratings: "**"
+  },
+  {
+    Name: "manan",
+    Location: "russia ",
+    Ratings: "***"
+  },
+  {
+    Name: "sahil",
+    Location: "france ",
+    Ratings: "****"
+  },
+  {
+    Name: "pratibha",
+    Location: "somalia ",
+    Ratings: "*"
+  },
+];
+var AllCustomers = document.getElementById("AllCustomers");
+
+/*for (var i = 0; i < Comp.length; i++) {
+  var My_list = document.createElement("OPTION");
+  My_list.innerHTML = Comp[i].Name;
+  My_list.value = Comp[i].Location;
+  AllCustomers.appendChild(My_list)
+
+}*/
+Comp.forEach(element=>{
+  var My_list = document.createElement("OPTION");
+  My_list.innerHTML = element.Name;
+  My_list.value = JSON.stringify({"loc":element.Location,"ratings":element.Ratings});//storing as a JSON in value attribute
+  AllCustomers.appendChild(My_list)
+})
+
+function ShowCX() {
+  value = JSON.parse(AllCustomers.value); //gettinng the JSON
+  document.getElementById("display_message").innerHTML = value.loc;
+  document.getElementById("display_message2").innerHTML = value.ratings;
+
+}
+</script>
+</body>
+</html>
