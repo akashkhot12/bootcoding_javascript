@@ -6,6 +6,15 @@
     <title>Date & Time</title>
 </head>
 <body>
-    
+   <script>
+    let now = new Date();
+    let day = now.getDay();
+    document.write(GetDay(day))
+    function GetDay(dayNumber) {
+        let dayName=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        return dayName(dayNumber)
+    }
+   
+   </script>
 </body>
 </html>
