@@ -8,8 +8,11 @@
 <body>
    <script>
     let now = new Date();
+    let tarik = now.getDate();
+    let saal  = now.getFullYear()
     let din = now.getDay(3);
-    document.write(gettingDay(din))
+    document.write(tarik+"/"+gettingDay(din) +"/"+saal+"<br>")
+    document.write(`${tarik}/${gettingDay(din)}/${saal}`)
     function gettingDay(din) {
         let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         return dayNames[din]
