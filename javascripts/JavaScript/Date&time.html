@@ -7,16 +7,50 @@
 </head>
 <body>
    <script>
+
+    // day
     let now = new Date();
     let tarik = now.getDate();
     let saal  = now.getFullYear()
     let din = now.getDay(3);
-    document.write(tarik+"/"+gettingDay(din) +"/"+saal+"<br>")
-    document.write(`${tarik}/${gettingDay(din)}/${saal}`)
+    // document.write(`${tarik}/${gettingDay(din)}/${saal}"<br>`)
+    document.write(`Today is = ${gettingDay(din)}<br>`)
     function gettingDay(din) {
         let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         return dayNames[din]
     }
+    
+    // time
+    
+    const AMPM = (date) =>{
+        let hrs = date.getHours();
+        let min = date.getMinutes();
+    let ampm = hrs >= 12 ? 'pm':'am';
+    hrs = hrs%12;
+    hrs = hrs ? hrs : 12;
+    min = min < 10 ? '0'+min : min ;
+    let strtime = `${hrs}${ampm} : ${min}`
+    return strtime ;
+}
+console.log(AMPM(new Date()))
+
+
+document.write(`Current time is : ${AMPM(now)}`)
+
+
+    //  let time =new Date();
+    //  let hours = time.getHours();
+    //  let minutes = time.getMinutes()
+    //  let AmPm = "" ; 
+    //  function AmPm(hours) { n  
+    //      if (hours>=12) {
+    //          AmPm =  "pm";
+    //         }else{
+    //         AmPm =  "am";
+    //         }
+    //     }
+    // document.write(`Current time is : ${hours}${AmPm(hours)} : ${minutes}`)
+
   
    
    </script>
