@@ -25,11 +25,12 @@
     const AMPM = (date) =>{
         let hrs = date.getHours();
         let min = date.getMinutes();
+        let sec = date.getSeconds();
     let ampm = hrs >= 12 ? 'pm':'am';
     hrs = hrs%12;
     hrs = hrs ? hrs : 12;
     min = min < 10 ? '0'+min : min ;
-    let strtime = `${hrs}${ampm} : ${min}`
+    let strtime = `${hrs}${ampm} : ${min} : ${sec}`
     return strtime ;
 }
 console.log(AMPM(new Date()))
