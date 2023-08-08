@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    function firstSunday () {
+  for (var year = 2014; year <= 2050; year++) {
+    var d = new Date(year, 0, 1);
+    if (d.getDay() === 0) {
+      console.log('The first day of ' + year + ' is a Sunday');
+    }
+  }
+}
+
+console.log(firstSunday());
+   </script> 
+</body>
+</html>
