@@ -13,7 +13,7 @@
     let tarik = now.getDate();
     let saal  = now.getFullYear()
     let din = now.getDay(3);
-    // document.write(`${tarik}/${gettingDay(din)}/${saal}"<br>`)
+    document.write(`${tarik}/${gettingDay(din)}/${saal}"<br>`)
     document.write(`Today is = ${gettingDay(din)}<br>`)
     function gettingDay(din) {
         let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -30,7 +30,7 @@
     hrs = hrs%12;
     hrs = hrs ? hrs : 12;
     min = min < 10 ? '0'+min : min ;
-    let strtime = `${hrs}${ampm} : ${min} : ${sec}`
+    let strtime = `${hrs} : ${min} : ${sec}${ampm}`
     return strtime ;
 }
 console.log(AMPM(new Date()))
