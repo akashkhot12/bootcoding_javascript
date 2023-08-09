@@ -6,14 +6,22 @@
     <title>Christmas</title>
 </head>
 <body>
+    <h1 id="healine"></h1>
+    <h1 id="heading"></h1>
+    
     <script>
- let today = new Date();
- let cms = new Date (today.getFullYear(),11,25);
- const oneDay=1000*60*60*24;
- const diff = Math.ceil ((cms.getTime()-today.getTime())/(oneDay))
- console.log(diff);
-
-// console.log(cms);
+        let headings = document.querySelector('#heading')
+        let headlines = document.querySelector('#headline')
+        let today  =  new Date();
+        document.write(today)
+        let Christmas = new Date(today.getFullYear(),11,25);
+        if (today.getMonth==11 && today.getDay>25) {
+            Christmas.setFullYear(Christmas.getFullYear()+1)
+        }
+        const day = 1000*60*60*24;
+        const diff = Math.ceil((Christmas.getTime()-today.getTime())/(day))
+        console.log(diff);
+        headings.innerHTML = diff+" left for Christmas. "
     </script>
 </body>
 </html>
