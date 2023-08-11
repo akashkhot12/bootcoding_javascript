@@ -9,7 +9,6 @@ function display() {
     for (let i = 0; i < items.length; i++) {
         let element = document.getElementById("demo")
         element.innerHTML = items[i];
-        element.appendChild(element)
       }
       return element;
 }
