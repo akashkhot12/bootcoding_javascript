@@ -15,9 +15,9 @@
                         <span class="fs-5 d-none d-sm-inline" style="color: chartreuse;">Menu</span>
                     </a>
                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                        <li class="nav-item">
+                        <li class="nav-item" id="demo">
                             <a href="#" class="nav-link align-middle px-0">
-                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline" style="color: antiquewhite;">Home</span>
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline" style="color: antiquewhite;"></span>
                             </a>
                         </li>
                     </ul>
@@ -26,15 +26,16 @@
                 </div>
             </div>
             <div class="col py-3">
-                <form>
+                <form onsubmit="getName()">
                     <div class="form-group m-5">
-                      <label for="exampleInputEmail1">Email address</label><br><br>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <label for="exampleInputEmail1">Type your text</label><br><br>
+                      <input  type="text" class="form-control" id="Name"  placeholder="Enter text"><br>
+                      <button type="submit" class="btn btn-primary" value="submit">Submit</button>
                     </div>
                   </form>
             </div>
         </div>
     </div>
+    <script src="dynamicLeftMenu.js"></script>
 </body>
 </html>
