@@ -6,6 +6,8 @@ function getName(){
     items.push(val);  
     display();
 }
+
+
 function display() {
     ul.setAttribute('id','theList')
     for (let i = 0; i <=items.length-1; i++) {
