@@ -4,7 +4,6 @@ const ul = document.getElementById('menu')
 function getName(){
     let val = Namevalue.value;
     items.push(val);  
-    
     display();
 }
 function display() {
