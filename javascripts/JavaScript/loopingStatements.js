@@ -7,15 +7,15 @@
 
 
 // do while loop
-// let b = 1;
-// do {
-//     console.log(b);
-//     b++;
-// } while (b<=10);
+let b = 1;
+do {
+    console.log(b);
+    b++;
+} while (b<=10);
 
 
 
-switch case
+// switch case
 let age = 30;
 switch (true) {
     case (age==30): console.log("u r good");
