@@ -4,7 +4,7 @@ for(let i = 0 ; i<arr.length-1;i++){
      value = arr[i]+value;  
 }
 console.log(value); 
-
+// value two
 let value2 = 0
 for(let j = 1 ; j<arr.length;j++){
      value2 = value2+arr[j];
