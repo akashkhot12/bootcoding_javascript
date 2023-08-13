@@ -15,14 +15,14 @@
 
 
 
-// switch case
-// let age = 30;
-// switch (true) {
-//     case (age==30): console.log("u r good");
-//         break;
-//     default: console.log("not good");
-//         break;
-// }
+switch case
+let age = 30;
+switch (true) {
+    case (age==30): console.log("u r good");
+        break;
+    default: console.log("not good");
+        break;
+}
 
 
 
