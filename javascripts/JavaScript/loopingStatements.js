@@ -8,10 +8,10 @@
 
 // do while loop
 let b = 1;
-do {
-    console.log(b);
-    b++;
-} while (b<=10);
+// do {
+//     console.log(b);
+//     b++;
+// } while (b<=10);
 
 
 
