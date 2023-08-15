@@ -7,8 +7,9 @@ function onFormSubmit(e){
         insertNewRecord(formData);
      }
      else{
-
+       updateRecord(formData)
      }
+     resetForm();
 }
 
 // retrive the data 
@@ -42,7 +43,7 @@ function insertNewRecord(data){
     cell4.innerHTML=data.perPrice;
 
     var cell5 =  newRow.insertCell(3);
-    cell5.innerHTML=`<buton onClick="onEdit(this)">Edit</buton> <button>Delete</button>`;
+    cell5.innerHTML=`<buton onClick="onEdit(this)">Edit</buton> <button onClick = 'onDelete(this)'>Delete</button>`;
 }
 
 // edit the data
@@ -65,4 +66,24 @@ function updateRecord(formData){
     selectedRow.cell[1].innerHTML = formData.product;
     selectedRow.cell[2].innerHTML = formData.qty;
     selectedRow.cell[3].innerHTML = formData.perPrice;
+}
+
+
+// delete the data
+
+function onDelete(td){
+    if (confirm('do you want to delete this recorde ?')) {
+        row = td.parentElement.parentElement;
+        document.getElementById('storeList').deleteRow(row.rowIndex)
+    }
+    resetForm();
+}
+
+// reset the data
+
+function resetForm(){
+    document.getElementById('productCode').value = '';
+    document.getElementById('product').value = '';
+    document.getElementById('qty').value = '';
+    document.getElementById('perPrice').value = '';
 }
