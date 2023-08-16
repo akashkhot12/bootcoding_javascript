@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <title>Crud Operation</title>
 </head>
 <body>
     <table>
         <tr>
             <td>
-                <form autocomplete="off" onsubmit="onFormSubmit" action="">
+                <form autocomplete="off" onsubmit="onFormSubmit()">
                     <div>
                         <label for="ProductCode">Product Code</label>
-                        <input type="text" name="ProductCode" id="ProductCode">
+                        <input type="text" name="ProductCode" id="ProductCode" value="akash">
                     </div>
                     <div>
                         <label for="Product">Product Name</label>
-                        <input type="text" name="Product" id="Product">
+                        <input type="text" name="Product" id="Product" value="akash">
                     </div>
                     <div>
                         <label for="ProductCode">Product Quantity</label>
-                        <input type="text" name="qty" id="qty">
+                        <input type="text" name="qty" id="qty" value="akash">
                     </div>
                     <div>
                         <label for="ProductCode">Price</label>
-                        <input type="text" name="perPrice" id="perPrice">
+                        <input type="text" name="perPrice" id="perPrice" value="akash">
                     </div>
                     <div class="form_action--button">
                         <input type="submit"value="submit">
@@ -52,6 +51,6 @@
             </td>
         </tr>
     </table>
-    
+    <script src="script.js" defer></script>
 </body>
 </html>
