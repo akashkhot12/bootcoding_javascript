@@ -54,9 +54,7 @@ function showData(){
         html+='<td><button onclick="deleteData('+index+')" class="btn btn-danger m-2">Delete</button><button onclick="updateData('+index+')" class="btn btn-warning">Edit</button></td>';
         html+="</tr>"
     });
-
-    document.querySelector("#crudTable tbody").innerHTML = html;
-
+   document.querySelector('#crudTable tbody').innerHTML = html;
 }
 
 document.onload = showData();
@@ -65,7 +63,7 @@ document.onload = showData();
 
 function AddData(){
     // if form is validate
-
+if (validForm()==true) {
     var name = document.getElementById("name").value;
     var age = document.getElementById("age").value;
     var address = document.getElementById("address").value;
@@ -85,9 +83,11 @@ function AddData(){
         email:email,
     });
 
-    localStorage.setItem("peopleList",JSON.stringify(peopleList))
-
+    localStorage.setItem("peopleList",JSON.stringify(peopleList));
     showData();
-
-    document.getElementById("name").value
+    document.getElementById("name").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("address").value = "";
+    document.getElementById("email").value = "";
+}
 }
