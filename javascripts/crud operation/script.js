@@ -1,8 +1,9 @@
-var selectedRow = null;
+// var selectedRow = null;
 
 function onFormSubmit(e){
      event.preventDefault();
      var formData = readFormData();
+     console.log(formData);
      if(selectedRow===null){
         insertNewRecord(formData);
      }
@@ -10,16 +11,17 @@ function onFormSubmit(e){
        updateRecord(formData)
      }
      resetForm();
+
 }
 
 // retrive the data 
 
 function readFormData(){
-    var formData = {}
-    formData["productCode"] = document.getElementById("productCode").ariaValueMax;
-    formData["product"] = document.getElementById("product").ariaValueMax;
-    formData["qty"] = document.getElementById("qty").ariaValueMax;
-    formData["perPrice"] = document.getElementById("perPrice").ariaValueMax;
+    var formData = {};
+    formData["productCode"] = document.getElementById("productCode").value;
+    formData["product"] = document.getElementById("product").value;
+    formData["qty"] = document.getElementById("qty").value;
+    formData["perPrice"] = document.getElementById("perPrice").value;
     return formData;  
 }
 
@@ -42,7 +44,7 @@ function insertNewRecord(data){
     var cell4 =  newRow.insertCell(3);
     cell4.innerHTML=data.perPrice;
 
-    var cell5 =  newRow.insertCell(3);
+    var cell5 =  newRow.insertCell(4);
     cell5.innerHTML=`<buton onClick="onEdit(this)">Edit</buton> <button onClick = 'onDelete(this)'>Delete</button>`;
 }
 
