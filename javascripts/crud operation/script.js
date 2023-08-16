@@ -3,7 +3,6 @@ function validForm() {
     var age = document.getElementById("age").value
     var address = document.getElementById("address").value
     var email = document.getElementById("email").value
-
     if(name==""){
         alert("name is required");
         return false;
