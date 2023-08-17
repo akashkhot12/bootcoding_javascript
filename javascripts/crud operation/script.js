@@ -32,8 +32,6 @@ function validForm() {
     return true;
 }
 
-
-
 function showData(){
     var peopleList;
     if(localStorage.getItem("peopleList")==null){
