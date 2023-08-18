@@ -12,7 +12,6 @@ let array = [4,3,5]
 // );
 
 
-
 for (const element of array) {
     if(element%2==0) {
         console.log("this number is even number");
