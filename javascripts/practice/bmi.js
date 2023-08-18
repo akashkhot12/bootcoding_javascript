@@ -2,4 +2,4 @@ function bmiCalculator(weight , height){
   let bmi =weight/(height*height)
   return bmi;
 }
-var bmi = bmiCalculator(65, 1.8); 
+var bmi = bmiCalculator(68, 1.8); 
