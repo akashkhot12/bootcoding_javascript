@@ -14,10 +14,10 @@
 let array = [1,2,3,1]
 
 
-for (let index = 0; index < array.length; index++) {
-    for (let j = 1; j < array.length; j++) {
+for (let index = 0; index <=array.length; index++) {
+    for (let j = 1; j <=array.length; j++) {
             if (array[index] === array[j]) {
-               
+               console.log("true");
             }
     }
 }
