@@ -13,8 +13,11 @@
 
 let array = [1,2,3,1]
 for (let index = 0; index < array.length; index++) {
-    
+    var val = array [index]
     for (let Zindex = 1; Zindex < array.length; Zindex++) {
-        console.log(array[Zindex]);
+        if (val===array[Zindex]) {
+            return true;
+        }
+        break;
     }
 }
