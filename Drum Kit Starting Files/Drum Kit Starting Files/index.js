@@ -58,7 +58,7 @@ function makeSound(key){
 }
 
 function buttonAnimation(currentKey){
-    document.querySelector(currentKey)
+    var activeButton = document.querySelector("." + currentKey)
 }
 
 
