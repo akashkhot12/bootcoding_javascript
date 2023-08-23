@@ -8,12 +8,12 @@ for (let index = 0; index < numberOfDrumButton; index++) {
     });
 }
 
-document.addEventListener("keypress",function(){
+document.addEventListener("keypress",function(event){
     makeSound(event.key)
 })
 
 function makeSound(key){
-    switch (buttonInnerHTML) {
+    switch (key) {
         case "w":
             var tom1 = new Audio("sounds/tom-1.mp3")
             tom1.play()
