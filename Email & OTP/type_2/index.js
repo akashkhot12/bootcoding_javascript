@@ -1,4 +1,4 @@
-
+let otpVerify = document.querySelector(".otpVerify")
 
  function sendEmail(e){
     e.preventDefault();
@@ -11,9 +11,14 @@
         Subject : document.getElementById("subject").value,
         Body : sentOTP(),
     }).then(
-      message => alert(message)
+      message => {
+        if (message==="OK") {
+          alert("your OTP was sent on "+document.getElementById("userEmail").value);
+          otpVerify.style.display = "block";
+        }
+      }
     );
-    return true;
+    
 }
 
 function sentOTP(){
@@ -21,3 +26,4 @@ function sentOTP(){
    let emailBody = `<h2>Your OTP is </h2><h1>${OTP}</h1>`
    return emailBody;
 }
+
