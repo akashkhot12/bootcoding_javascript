@@ -14,5 +14,11 @@ let addition = ()=>{
 }
 addition();
 
-let 
+let substraction = ()=>{
+    sub.addEventListener("click",()=>{
+        count = count-1;
+        value.innerHTML=count
+    })
+}
 
+substraction();
