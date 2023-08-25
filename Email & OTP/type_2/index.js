@@ -1,4 +1,3 @@
-
 function sendEmail(e){
     e.preventDefault();
     Email.send({
