@@ -1,4 +1,6 @@
-function sendEmail(e){
+
+
+ function sendEmail(e){
     e.preventDefault();
     Email.send({
         Host : "smtp.elasticemail.com",
@@ -7,9 +9,15 @@ function sendEmail(e){
         To : document.getElementById("userEmail").value,
         From : 'akashkhot03@gmail.com',
         Subject : document.getElementById("subject").value,
-        Body : document.getElementById("body").value,
+        Body : sentOTP(),
     }).then(
       message => alert(message)
     );
     return true;
+}
+
+function sentOTP(){
+   let OTP = Math.floor((Math.random()*1000000)+1);
+   let emailBody = `<h2>Your OTP is </h2><h1>${OTP}</h1>`
+   return emailBody;
 }
