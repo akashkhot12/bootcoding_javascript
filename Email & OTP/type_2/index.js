@@ -1,3 +1,4 @@
+
 let otpVerify = document.querySelector(".otpVerify")
 
  function sendEmail(e){
