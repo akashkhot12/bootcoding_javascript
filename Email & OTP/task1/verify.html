@@ -14,7 +14,7 @@
   </head>
   <body>
     <form class="p-5" >
-        <h1>Contact form</h1>
+        <h1>Verify the otp</h1>
         <br>
         <div class="form-group">
           <label for="exampleFormControlInput1">To</label>
@@ -26,31 +26,16 @@
           <input type="text" class="form-control " id="subject" placeholder="add subject" required>
           <br>
         </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">body</label>
-            <input type="text" class="form-control " id="body" placeholder="add body" required>
-            <br>
+
+        <div class="input-group mb-3 otpVerify">
+            <input type="text" class="form-control" placeholder="enter OTP"  aria-describedby="basic-addon2" >
+            <div class="input-group-append ">
+              <button class="btn btn-success" id="btn" type="submit">Verify</button>
+            </div>
           </div>
 
-      <div
-        class="btn-toolbar"
-        role="toolbar"
-        aria-label="Toolbar with button groups"
-      >
-        <div class="btn-group me-2" role="group" aria-label="First group">
-          <button type="button" class="btn btn-primary" onclick="sendEmail()">
-            Sending Mail
-          </button>
-        </div>
-        <div class="btn-group me-2" role="group" aria-label="Second group">
-          <button type="button" class="btn btn-secondary"x onclick="sendingOTP()">Sending OTP</button>
-        </div>
-        <div class="btn-group" role="group" aria-label="Third group">
-          <a href="verify.html"><button type="button"   class="btn btn-warning">check OTP</button></a>
-        </div>
-      </div>
     </form>
-
+    <button type="button" class="btn btn-primary btn-lg">Sent </button>
     <script src="index.js" defer></script>
   </body>
 </html>
