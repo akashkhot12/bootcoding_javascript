@@ -1,7 +1,5 @@
 
-
- function sendEmail(e){
-    e.preventDefault();
+ function sendEmail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "akashkhot03@gmail.com",
@@ -11,13 +9,10 @@
         Subject : document.getElementById("subject").value,
         Body : document.getElementById("body").value,
     }).then(
-      message => {
-        if (message==="OK") {
-          alert("your mail was sent on "+document.getElementById("userEmail").value);
-        }
-      }
+      message =>alert(message)
     );
     
 }
+
 
 
