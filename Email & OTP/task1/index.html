@@ -26,9 +26,11 @@
           <textarea class="form-control message" id="body" rows="3" required></textarea>
           <br>
         </div>
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary" onclick="sendMail()">Send</button>
-        </div>
+        <div class="btn-group " role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary ">Sending mail</button>
+            <button type="button" class="btn btn-secondary mx-3">Sending OTP</button>
+            <button type="button" class="btn btn-warning mx-1">Verify OTP</button>
+          </div>
       </form>
       <script src="index.js" defer></script>
 </body>
