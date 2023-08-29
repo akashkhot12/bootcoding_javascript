@@ -13,8 +13,22 @@
 // Explanation: The last word is "joyboy" with length 6.
  
 
-let array = ["Hello","World"]
+// let arr = ["Hello","World"]
 
-for (let index = 0; index < array.length; index++) {
-    console.log(array[index]);
-}``
+// // for (let i = arr.length - 1; i >= 0; i--){
+// // console.log(arr[i]);
+// // }
+// let name = arr[arr.length-1] ; 
+// console.log(name);
+// let count = 0 ; 
+// for(let i=0 ; i<name.length ; i++){
+//     count++ ; 
+// }
+
+// console.log(count);
+
+
+
+let sentence  = "hello world"
+let method = sentence.split(" ")
+// console.log(method); converted into array
