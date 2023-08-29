@@ -32,3 +32,6 @@
 let sentence  = "hello world"
 let method = sentence.split(" ")
 // console.log(method); converted into array
+method = method[method.length-1];
+// console.log(method); print the last value
+
