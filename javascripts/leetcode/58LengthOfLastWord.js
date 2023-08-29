@@ -29,9 +29,19 @@
 
 
 
-let sentence  = "hello world"
+let sentence  = "hello is the world "
 let method = sentence.split(" ")
 // console.log(method); converted into array
 method = method[method.length-1];
 // console.log(method); print the last value
+let count = 0;
+for (let index = 0; index < method.length; index++) {
+    count++;
+}
+console.log(count);
 
+
+
+var lengthOfLastWord = function(s) {
+    
+};
