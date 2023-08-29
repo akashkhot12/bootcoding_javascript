@@ -43,7 +43,7 @@
 
 
 var lengthOfLastWord = function(s) {
-let method = s.split(" ")
+let method = s.trim().split(" ")
 method = method[method.length-1];
 let count = 0;
 for (let index = 0; index < method.length; index++) {
