@@ -51,5 +51,4 @@ for (let index = 0; index < method.length; index++) {
 }
 console.log(count);
 };
-
 let value = lengthOfLastWord("hello world");
