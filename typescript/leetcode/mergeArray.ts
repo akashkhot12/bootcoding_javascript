@@ -1,8 +1,8 @@
-// let arr=(parseInt(["1", "2", "9"].join("")) + 1).toString()
-// console.log(arr);
-// const arrayOfDigits = Array.from(String(arr), Number);
+let arr=(parseInt(["1", "2", "9"].join("")) + 1).toString()
+console.log(arr);
+const arrayOfDigits = Array.from(String(arr), Number);
 
-// console.log(arrayOfDigits);
+console.log(arrayOfDigits);
 
 
 // function plusOne(digits: number[]): number[] {
