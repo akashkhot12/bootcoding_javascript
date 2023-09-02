@@ -14,4 +14,5 @@ var system;
     system.computerCycle = computerCycle;
 })(system || (system = {}));
 var s1 = new system.computerCycle();
+
 console.log(s1.computerParts());
