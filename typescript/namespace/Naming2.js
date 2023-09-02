@@ -1,4 +1,5 @@
 var system;
+
 (function (system) {
     var computerCycle = /** @class */ (function () {
         function computerCycle() {
