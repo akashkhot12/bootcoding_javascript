@@ -1,3 +1,2 @@
-$('h1').css('color','grey');
+$('h1').css('color','blue');
 
-console.log($('h1').css('font-size'));
