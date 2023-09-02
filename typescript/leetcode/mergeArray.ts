@@ -5,14 +5,14 @@
 // console.log(arrayOfDigits);
 
 
-function plusOne(digits: number[]): number[] {
+// function plusOne(digits: number[]): number[] {
     
-}
-let ak= plusOne([])
+// }
+// let ak= plusOne([])
 
 
-let arr=[1,2,3];
-let s1=arr.concat()
-console.log(s1)
+// let arr=[1,2,3];
+// let s1=arr.concat()
+// console.log(s1)
 
 
