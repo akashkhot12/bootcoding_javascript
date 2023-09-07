@@ -9,6 +9,7 @@
   "author": "akash khot",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "superheroes": "^3.0.0"
   }
 }
