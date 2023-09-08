@@ -1,8 +1,8 @@
 const http = require('http');
 function sendData(req,resp){
-    resp.writeHead(200,{'contend-type':'application\json'})
+    resp.writeHead(2000,{'contend-type':'application\json'})
     resp.write("akash khot");
     resp.end();
 }
 
-http.createServer(sendData).listen(5000)
+http.createServer(sendData).listen(5600)
