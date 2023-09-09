@@ -1,5 +1,5 @@
 const http= require ('http');
-const doc = require('./d{ata');
+const doc = require('./data');
 function getDoc(req,res) {
     res.writeHead(200,{'content-type':'application/json'});
     res.write(JSON.stringify(doc))
