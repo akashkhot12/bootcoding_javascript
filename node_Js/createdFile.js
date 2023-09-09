@@ -13,6 +13,6 @@ const dirPath=path.join(__dirname,'files')
 // files read code 
 fs.readdir(dirPath,(err,files)=>{
     files.forEach((item)=>{
-        console.log("your file is => "+ item);
+        console.log("your file name => "+ item);
     })
 })
