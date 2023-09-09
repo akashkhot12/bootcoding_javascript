@@ -1,6 +1,6 @@
 const http = require('http');
-const data1= require('')
+const data1= require('.data1')
 http.createServer((req,res)=>{
-    res.write("here I am !")
+    res.write()
     res.end();
 }).listen(4900)
