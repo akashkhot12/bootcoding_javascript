@@ -1,8 +1,5 @@
-const data= [{
-    name:"akash khot",
-    phoon:9834281002,
-    email:"akashkhot03@gmail.com",
-    postal:441904
+const data1= [{
+    name:"akash khot"
 }]
 
-module.export=data;
+module.export=data1;
