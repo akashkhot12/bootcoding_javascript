@@ -9,6 +9,11 @@ const filePath = `${dirPath}/data.txt`
 //     console.log(item);
 // })  =>read
 
-fs.appendFile(filePath,' and file name is data.txt' ,(err)=>{
-  if(!err) console.log("file is updated");  
+// fs.appendFile(filePath,' and file name is data.txt' ,(err)=>{
+//   if(!err) console.log("file is updated");  
+// })  => update
+
+
+fs.rename(filePath,`${dirPath}/dataCreate.txt`,(err)=>{
+    if(!err) console.log("file is renamed");
 })
