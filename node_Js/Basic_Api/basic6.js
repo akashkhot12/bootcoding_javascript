@@ -1,6 +1,9 @@
 let http = require('http');
+const data = require('./data')
 
-http.createServer((req,resp)=>{
-    resp.write('this code will be run today');
-    resp.end()
-}).listen(4100) 
+function giveServer(req,res){
+    res.writeHead(200,{'content-type':'application/json'})
+    res.write(JSON.stringify(data))
+    res.end()
+}
+http.createServer(giveServer).listen(4100) 
