@@ -14,6 +14,9 @@ const filePath = `${dirPath}/data.txt`
 // })  => update
 
 
-fs.rename(filePath,`${dirPath}/dataCreate.txt`,(err)=>{
-    if(!err) console.log("file is renamed");
-})
+// fs.rename(filePath,`${dirPath}/dataCreate.txt`,(err)=>{
+//     if(!err) console.log("file is renamed");
+// })  => renamed file
+
+
+fs.unlinkSync(`${dirPath}/dataCreate.txt`)
