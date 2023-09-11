@@ -19,4 +19,4 @@ const filePath = `${dirPath}/data.txt`
 // })  => renamed file
 
 
-fs.unlinkSync(`${dirPath}/dataCreate.txt`)
+// fs.unlinkSync(`${dirPath}/dataCreate.txt`) =>delete file
