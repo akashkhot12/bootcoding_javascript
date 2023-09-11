@@ -1,1 +1,1 @@
-this is a simple text file
+this is a simple text file and file name is data.txt
