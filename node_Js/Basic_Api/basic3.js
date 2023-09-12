@@ -5,5 +5,4 @@ function getDoc(req,res) {
     res.write(JSON.stringify(doc))
     res.end();
 }
-
 http.createServer(getDoc).listen(1200)
