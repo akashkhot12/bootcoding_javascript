@@ -7,9 +7,9 @@ fs.writeFileSync(filePath,'this is a simple text file');
 
 
 
-// fs.readFile(filePath,'utf8',(err,item)=>{
-//     console.log(item);
-// })  
+fs.readFile(filePath,'utf8',(err,item)=>{
+    console.log(item);
+})  
 
 
 
