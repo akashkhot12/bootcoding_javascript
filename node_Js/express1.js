@@ -3,7 +3,8 @@ const express = require('express')
 const app=express();
 
 app.get('',(req,res)=>{
-    res.send("hello this is web page")
+    console.log("name is => " ,req.query.name);
+    res.send("welcome "+req.query.name)
 })
 
 app.get('/about',(req,res)=>{
