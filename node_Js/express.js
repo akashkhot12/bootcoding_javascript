@@ -17,5 +17,4 @@ app.get("/serverPage", (req, res) => {
       ]
   );
 });
-
 app.listen(5000);
