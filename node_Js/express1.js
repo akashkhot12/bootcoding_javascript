@@ -2,9 +2,9 @@ const express = require('express')
 
 const app=express();
 
-app.get('/welcome',(req,res)=>{
+app.get('/',(req,res)=>{
     console.log("name is => " ,req.query.name);
-    res.send("welcome "+req.query.name + ` <a href = /about> go to about page</a>`)
+    res.send(`hello ${req.query.name} <a href = /about> go to about page</a>`)
 })
 
 app.get('/about',(req,res)=>{
