@@ -6,7 +6,16 @@ app.get("", (req, res) => {
 });
 
 app.get("/serverPage", (req, res) => {
-  res.send("hello from simple server page");
+  res.send(
+      [
+         {name : "anil",
+         middleName : "bhojaraj",
+         lastName : "sidhu"},
+         {name : "anil",
+         middleName : "bhojaraj",
+         lastName : "sidhu"}
+      ]
+  );
 });
 
 app.listen(5000);
