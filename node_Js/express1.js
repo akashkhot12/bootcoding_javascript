@@ -19,9 +19,12 @@ const express = require ("express");
 const app = express();
 
 const pathData  = path.join(__dirname,'htmlWithExpress');
-console.log(pathData);
 
-app.use(express.static(pathData))
+app.get("",(req,res)=>{
+    res.sendFile(`${pathData}/index.html`)
+})
+
+// app.use(express.static(pathData))
 
 app.listen(3300)
 
