@@ -24,6 +24,9 @@ app.get("",(req,res)=>{
     res.sendFile(`${pathData}/index.html`)
 })
 
+app.get("*",(req,res)=>{
+    res.sendFile(`${pathData}/notVAlid.html`)
+})
 // app.use(express.static(pathData))
 
 app.listen(3300)
