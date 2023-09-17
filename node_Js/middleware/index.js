@@ -7,7 +7,8 @@ const reqFilter=(req,res,next)=>{
     next();
 }
 
-app.use(reqFilter)
+app.use(reqFilter);
+
 app.get('',(req,res)=>{
     res.send("welcome the home page")
 })
