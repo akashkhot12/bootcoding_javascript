@@ -28,3 +28,5 @@ const genTable = async()=>{
 }
 
 genTable();
+
+
