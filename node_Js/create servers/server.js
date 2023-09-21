@@ -8,3 +8,8 @@ http.createServer((req,res)=>{
 
 
 
+const http = require('http');
+http.createServer((req,res)=>{
+    res.write("this nis neew server genreted")
+    res.end()
+}).listen();

@@ -6,3 +6,13 @@ function createServers(req,res){
 }
 
 http.createServer(createServers).listen(1232)
+
+
+
+let http = require ('http');
+function createServer(req,res){
+    res.write("<h1>this is big head</h1>")
+    res.ead()
+}
+
+http.createServer(createServer).listen(9000)
