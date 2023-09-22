@@ -1,5 +1,5 @@
 const dbcongif = {
-    user : "postgress",
+    user : "postgres",
     host :"localhost",
     database:"node",
     password:"Akash3975"
