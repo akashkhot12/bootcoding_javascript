@@ -1,7 +1,8 @@
-const databse = {
-    user :'postgres',
-    host : 'localhost',
-    databse : 'node',
-    password : 'Akash3975'
+const datab = {
+    user : "postgres",
+    host :"localhost",
+    database:"node",
+    password:"Akash3975"
 }
-module.exports={databse}
+
+module.exports={datab}
