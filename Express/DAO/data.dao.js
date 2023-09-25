@@ -9,4 +9,11 @@ const query = async (req, res) => {
     }
     return result;
   });
+
 };
+
+
+const createTable = async()=>{
+  const pool = new Pool(db.dbConfig);
+  const generateTable = `create table if not exist pul`
+}
