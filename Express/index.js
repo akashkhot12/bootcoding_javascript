@@ -4,3 +4,4 @@ const dbConfig = {
   password:"Akash3975",
   database:"node"
 }
+module.exports{dbConfig}
