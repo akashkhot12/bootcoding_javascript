@@ -27,7 +27,23 @@ const createTable = async()=>{
 const result = pool.query(generateTable)
 pool.end();
 }
-
 createTable();
+
+const insertData = async(id,first_name,last_name,gender,birthdate,email_id,country_of_birth)=>{
+  const pool = new Pool(db.dbConfig);
+  const insert = `insert into public.student(id,first_name,last_name,gender,birthdate,email_id,country_of_birth)
+  values('${id}','${first_name}','${last_name}','${gender}','${birthdate}','${email_id}','${country_of_birth}')`;
+
+  const res = await pool.query(insert);
+  let message = "data is inserted"
+  if (res.affectedRows) {
+    message : message;
+  }
+
+  pool.end();
+  return res ;
+};
+
+
 
 module.exports={};
