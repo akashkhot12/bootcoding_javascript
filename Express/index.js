@@ -1,9 +1,8 @@
-const dbConfig = {
-  host: "localhost",
-  user: "postgres",
-  password: "Akash3975",
-  database: "node",
-};
+const express = require('express');
+const app = express();
+const data = require("./Api/data.api");
 
-
-module.exports = { dbConfig };
+asserts.use(express.json());
+app.use('/data',data).listen(4000,()=>{
+  console.log("server is run");
+})
