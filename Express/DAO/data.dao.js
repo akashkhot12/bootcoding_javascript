@@ -29,3 +29,5 @@ pool.end();
 }
 
 createTable();
+
+module.exports={};
