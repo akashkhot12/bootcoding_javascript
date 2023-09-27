@@ -1,4 +1,4 @@
-const { Pool, Client, Query } = require("bg");
+const { Pool, Client, Query } = require("pg");
 const db = require("../connections/dbConfig");
 
 const query = async (req, res) => {
