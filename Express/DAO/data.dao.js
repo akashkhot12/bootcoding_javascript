@@ -44,6 +44,20 @@ const insertData = async(id,first_name,last_name,gender,birthdate,email_id,count
   return res ;
 };
 
+// insertData(3,'harish','bhanarkar','female','12/11/1998' ,'akashkhot200@gmail.com','India')
+
+const getData= async()=>{
+  const pool = new Pool(db.dbconfig);
+  const qr = ` select * from public.student`;
+  const res = await pool.query(qr);
+  if (res.affectedRows) {
+    message:res;
+  }
+  pool.end();
+  console.log(res.rows);
+  return res.rows;
+}
+getData();
 
 
-module.exports={};
+module.exports={insertData,getData};
