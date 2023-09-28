@@ -6,3 +6,6 @@ for (var index in fruits) {
 for (var i = 0; i < fruits.length; i++) {
   console.log(fruits[i]); // output: Apple Orange Banana
 }
+
+
+
