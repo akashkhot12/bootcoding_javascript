@@ -66,6 +66,26 @@ const getData = async (id) => {
   return res.rows;
 };
 
-getData(3);
+// getData();
 
-module.exports = { insertData, getData };
+
+
+// delete data 
+async function deleteFunction(id){
+    const pool=new Pool(db.database);
+    const qr = `DELETE FROM public.worker Where id = ${id}`;
+    const res = await pool.query(qr);
+    console.log(res);
+    if (res.affectedRows) {
+      message: "row delected successfully";
+    }
+    else{
+      message :"not found"
+    }
+    pool.end();
+    console.log(res.rows);
+    return res.rows
+    } 
+
+
+module.exports = { insertData, getData ,deleteFunction};
