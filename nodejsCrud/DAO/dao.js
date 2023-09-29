@@ -25,7 +25,7 @@ const createTable = async () => {
     pool.end();
   };
 
-  createTable()
+//   createTable()
 
 
   
@@ -44,4 +44,4 @@ const insertData = async (EmployeeID,FirstName,LastName,Email,AddressLine,City) 
     return res;
   };
   
-  insertData(1,'vansh','belekar','vansh@gmail.com','khat road','bhandara')
+  insertData(3,'chiu','khot','chiu@gmail.com','ram road','lakhani')
