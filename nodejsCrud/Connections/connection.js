@@ -1,8 +1,8 @@
 const database ={
-    host : "localhost",
-    password: "Akash3975",
-    user : "postgres",
-    database : "learning"
+    user : 'postgres',
+    host : 'localhost',
+    database : 'learning',
+    password : 'Akash3975' 
 }
 
 module.exports = {database}
