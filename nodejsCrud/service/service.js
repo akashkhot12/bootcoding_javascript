@@ -1,16 +1,49 @@
 const data = require("../DAO/dao");
 
-async function insertService(EmployeeID,FirstName,LastName,Email,AddressLine,City){
-    return await data.insertData(EmployeeID,FirstName,LastName,Email,AddressLine,City);
+async function insertService(
+  EmployeeID,
+  FirstName,
+  LastName,
+  Email,
+  AddressLine,
+  City
+) {
+  return await data.insertData(
+    EmployeeID,
+    FirstName,
+    LastName,
+    Email,
+    AddressLine,
+    City
+  );
 }
 
-async function getService(id){
-    return await data.getData(id);
+async function getService(id) {
+  return await data.getData(id);
 }
 
-async function deleteService(id){
-    return await data.deleteFunction(id);
+async function updateService(
+  EmployeeID,
+  FirstName,
+  LastName,
+  Email,
+  AddressLine,
+  City
+) {
+  return await data.updateUser(
+    EmployeeID,
+    FirstName,
+    LastName,
+    Email,
+    AddressLine,
+    City
+  );
 }
 
+// updateService(43,'lokesh','khot','lokeshhgjug@gmail.com','wijahbkdj','hbf');
 
-module.exports = {insertService , getService,deleteService}      
+async function deleteService(id) {
+  return await data.deleteFunction(id);
+}
+
+module.exports = { insertService, getService, updateService, deleteService };

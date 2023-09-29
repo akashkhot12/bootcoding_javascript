@@ -70,22 +70,47 @@ const getData = async (id) => {
 
 
 
-// delete data 
-async function deleteFunction(id){
-    const pool=new Pool(db.database);
-    const qr = `DELETE FROM public.worker Where id = ${id}`;
-    const res = await pool.query(qr);
-    console.log(res);
-    if (res.affectedRows) {
-      message: "row delected successfully";
-    }
-    else{
-      message :"not found"
-    }
-    pool.end();
-    console.log(res.rows);
-    return res.rows
-    } 
 
 
-module.exports = { insertData, getData ,deleteFunction};
+
+// update data
+const updateUser = async (EmployeeID,FirstName,LastName,Email,AddressLine,City) => {
+  const pool = new Pool(db.database);
+  const qr = `UPDATE public.worker SET FirstName = '${FirstName}', LastName ='${LastName}', Email='${Email}', AddressLine ='${AddressLine}', City='${City}' WHERE EmployeeID = ${EmployeeID}`;
+
+  const res = await pool.query(qr);
+  if (res.affectedRows) {
+    message: res;
+  }
+  pool.end();
+  console.log(res.rows);
+  return res.rows;
+};
+
+
+
+// updateUser(1,'lokesh','khot','lokesh@gmail.com','wijahbkdj','hbf')
+
+
+
+
+
+
+
+// delete data
+async function deleteFunction(id) {
+  const pool = new Pool(db.database);
+  const qr = `DELETE FROM public.worker Where id = ${id}`;
+  const res = await pool.query(qr);
+  console.log(res);
+  if (res.affectedRows) {
+    message: "row delected successfully";
+  } else {
+    message: "not found";
+  }
+  pool.end();
+  console.log(res.rows);
+  return res.rows;
+}
+
+module.exports = { insertData, getData, updateUser, deleteFunction };
