@@ -12,8 +12,8 @@ const query = async (req, res) => {
 };
 
 const createTable = async () => {
-    const pool = new Pool(db.database);
-    const generateTable = `CREATE TABLE IF NOT EXISTS public.worker (
+  const pool = new Pool(db.database);
+  const generateTable = `CREATE TABLE IF NOT EXISTS public.worker (
         EmployeeID INT PRIMARY KEY,
         FirstName VARCHAR(50) NOT NULL,
         LastName VARCHAR(50) NOT NULL,
@@ -21,27 +21,51 @@ const createTable = async () => {
         AddressLine VARCHAR(50),
         City VARCHAR(100)
       );`;
-    const result = pool.query(generateTable);
-    pool.end();
-  };
+  const result = pool.query(generateTable);
+  pool.end();
+};
 
 //   createTable()
 
-
-  
-const insertData = async (EmployeeID,FirstName,LastName,Email,AddressLine,City) => {
-    const pool = new Pool(db.database);
-    const insert = `insert into public.worker(EmployeeID,FirstName,LastName,Email,AddressLine,City)
+const insertData = async (
+  EmployeeID,
+  FirstName,
+  LastName,
+  Email,
+  AddressLine,
+  City
+) => {
+  const pool = new Pool(db.database);
+  const insert = `insert into public.worker(EmployeeID,FirstName,LastName,Email,AddressLine,City)
       values('${EmployeeID}','${FirstName}','${LastName}','${Email}','${AddressLine}','${City}')`;
-  
-    const res = await pool.query(insert);
-    let message = "data is updated"
-    if (res.affectedRows) {
-      message: message;
-    }
-  
-    pool.end();
-    return res;
-  };
-  
-  insertData(3,'chiu','khot','chiu@gmail.com','ram road','lakhani')
+
+  const res = await pool.query(insert);
+  let message = "data is updated";
+  if (res.affectedRows) {
+    message: message;
+  }
+
+  pool.end();
+  return res;
+};
+
+//   insertData(3,'chiu','khot','chiu@gmail.com','ram road','lakhani')
+
+//   get data
+
+const getData = async (id) => {
+  const pool = new Pool(db.database);
+  const qry = ` select * from public.worker WHERE EmployeeID = ${id}`;
+
+  const res = await pool.query(qry);
+  if (res.affectedRows) {
+    message: res;
+  }
+  pool.end();
+  console.log(res.rows);
+  return res.rows;
+};
+
+getData(3);
+
+module.exports = { insertData, getData };
