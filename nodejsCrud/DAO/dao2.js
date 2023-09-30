@@ -9,4 +9,6 @@ const  query = async(req,res)=>{
         }
         return result;
     }) 
-}
+};
+
+
