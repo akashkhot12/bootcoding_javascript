@@ -53,6 +53,4 @@ const getData = async(id)=>{
   return res.rows
 }
 
-getData(4)
-
-module.exports = {createTable,insertdata}
+module.exports = {createTable,insertdata,getData}
