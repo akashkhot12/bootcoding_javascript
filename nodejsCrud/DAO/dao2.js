@@ -40,4 +40,19 @@ const insertdata = async ( name, address, email, phone) => {
 
 // insertdata("akash","ram mandir ward bhandara","akash@gmail.com","9834281002")
 
+const getData = async(id)=>{
+  const pool=new Pool(db.postg)
+  const qry = ` select * from public.Companies WHERE id = ${id}`; 
+  const res  = await pool.query(qry);
+  if (res.affectedRows) {
+    message:message
+  }
+  
+  pool.end();
+  console.log(res.rows);
+  return res.rows
+}
+
+getData(4)
+
 module.exports = {createTable,insertdata}

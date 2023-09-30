@@ -13,3 +13,4 @@ router.post("/insert", async (req, res) => {
   console.log("data inserted", dbResponse);
   req.status(200).json({ staus: 200, message: dbResponse });
 });
+
