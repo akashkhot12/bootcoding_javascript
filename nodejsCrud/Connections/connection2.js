@@ -5,3 +5,5 @@ const postg = {
     password : "Akash3975"
     
 }
+
+module.exports ={postg}
