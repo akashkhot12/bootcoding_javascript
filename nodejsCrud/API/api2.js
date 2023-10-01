@@ -14,12 +14,11 @@ router.post("/insert", async (req, res) => {
   req.status(200).json({ staus: 200, message: dbResponse });
 });
 
-
-router.get("/getMethode",async(req,res)=>{
+router.get("/getMethode", async (req, res) => {
   let id = req.params.id;
   let dbResponse = await db.getService(id);
   console.log(dbResponse);
-  req.status(200).json({status:200,mesaage:dbResponse})
+  req.status(200).json({ status: 200, mesaage: dbResponse });
 });
 
-module.exports = router
+module.exports = router;
