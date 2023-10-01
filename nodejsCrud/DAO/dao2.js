@@ -25,32 +25,31 @@ const createTable = async () => {
   pool.end();
 };
 
-const insertdata = async ( name, address, email, phone) => {
+const insertdata = async (name, address, email, phone) => {
   const pool = new Pool(db.postg);
   const insert = `insert into public.Companies(name,address,email,phone) values('${name}','${address}','${email}','${phone}')`;
   const res = await pool.query(insert);
-  message = "insert data"
+  message = "insert data";
   if (res.affectedRows) {
-    message:message
+    message: message;
   }
   pool.end();
   return res;
-
 };
 
 // insertdata("akash","ram mandir ward bhandara","akash@gmail.com","9834281002")
 
-const getData = async(id)=>{
-  const pool=new Pool(db.postg)
-  const qry = ` select * from public.Companies WHERE id = ${id}`; 
-  const res  = await pool.query(qry);
+const getData = async (id) => {
+  const pool = new Pool(db.postg);
+  const qry = ` select * from public.Companies WHERE id = ${id}`;
+  const res = await pool.query(qry);
   if (res.affectedRows) {
-    message:message
+    message: message;
   }
-  
+
   pool.end();
   console.log(res.rows);
-  return res.rows
-}
+  return res.rows;
+};
 
-module.exports = {createTable,insertdata,getData}
+module.exports = { createTable, insertdata, getData };
