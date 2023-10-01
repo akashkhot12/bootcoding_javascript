@@ -21,3 +21,5 @@ router.get("/getMethode",async(req,res)=>{
   console.log(dbResponse);
   req.status(200).json({status:200,mesaage:dbResponse})
 });
+
+module.exports = router
