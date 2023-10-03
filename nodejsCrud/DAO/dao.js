@@ -66,7 +66,7 @@ const getData = async (id) => {
   return res.rows;
 };
 
-getData();
+// getData();
 
 
 
