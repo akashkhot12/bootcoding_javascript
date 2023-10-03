@@ -14,7 +14,6 @@ router.post("/insert", async (req, res) => {
   req.status(200).json({ staus: 200, message: dbResponse });
 });
 
-
 router.get("/getMethode", async (req, res) => {
   let id = req.params.id;
   let dbResponse = await db.getService(id);
