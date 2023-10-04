@@ -69,7 +69,6 @@ const getData = async (id) => {
 // getData();
 
 
-
 // update data
 const updateUser = async (EmployeeID,FirstName,LastName,Email,AddressLine,City) => {
   const pool = new Pool(db.database);
