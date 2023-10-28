@@ -25,7 +25,7 @@ const createTable = async () => {
   pool.end();
 };
 
-//   createTable()
+  createTable()
 
 const insertData = async (
   EmployeeID,
