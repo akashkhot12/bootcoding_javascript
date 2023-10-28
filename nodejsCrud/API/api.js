@@ -31,7 +31,15 @@ router.get("/showData/:id", async (req, res) => {
   let id = req.params.id;
   let dbResponse = await service.getService(id);
   console.log(dbResponse);
-  res.status(200).json(dbResponse);
+  // res.status(200).json(dbResponse);
+  if (dbResponse) {
+    res.status(200)
+  }
+  else{
+    res.status(404)
+  }
+
+
 });
 
 //   update
