@@ -30,13 +30,14 @@ module.exports = router;
 router.get("/showData/:id", async (req, res) => {
   let id = req.params.id;
   let dbResponse = await service.getService(id);
-  console.log(dbResponse);
+  // console.log(dbResponse);
   // res.status(200).json(dbResponse);
   if (dbResponse) {
-    res.status(200)
+    res.status(200).json(dbResponse)
   }
   else{
     res.status(404)
+    console.log("something wrong");
   }
 
 
