@@ -37,7 +37,7 @@ const insertdata = async (name, address, email, phone) => {
   return res;
 };
 
-// insertdata("akash","ram mandir ward bhandara","akash@gmail.com","9834281002")
+insertdata("akash","ram mandir ward bhandara","akash@gmail.com","9834281002")
 
 const getData = async (id) => {
   const pool = new Pool(db.postg);
