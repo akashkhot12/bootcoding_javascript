@@ -50,4 +50,19 @@ const insertData = async (
     return res;
   };
 
-  insertData(1,'samsung s20 ultra','this is smartphone','7th gen',98000,'samsung');
+//   insertData(1,'samsung s20 ultra','this is smartphone','7th gen',98000,'samsung');
+
+const getData = async (id) => {
+    const pool = new Pool(db.database);
+    const qry = ` select * from public.mobilehub WHERE mobID = ${id}`;
+  
+    const res = await pool.query(qry);
+    if (res.affectedRows) {
+      message: res;
+    }
+    pool.end();
+    console.log(res.rows);
+    return res.rows;
+  };
+
+  getData(1);
