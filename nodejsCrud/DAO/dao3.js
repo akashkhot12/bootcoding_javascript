@@ -28,3 +28,26 @@ const createTable = async () => {
 
 //   createTable()
 
+
+const insertData = async (
+    mobID,
+    title,
+    summery,
+    model,
+    price,
+    brand
+  ) => {
+    const pool = new Pool(db.database);
+    const insert = `insert into public.mobilehub(mobID,title,summery,model,price,brand)
+        values('${mobID}','${title}','${summery}','${model}','${price}','${brand}')`;
+  
+    const res = await pool.query(insert);
+    let message = "data is updated";
+    if (res.affectedRows) {
+      message: message;
+    }
+    pool.end();
+    return res;
+  };
+
+  insertData(1,'samsung s20 ultra','this is smartphone','7th gen',98000,'samsung');
