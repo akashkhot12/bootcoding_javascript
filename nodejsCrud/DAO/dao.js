@@ -11,6 +11,7 @@ const query = async (req, res) => {
   });
 };
 
+
 const createTable = async () => {
   const pool = new Pool(db.database);
   const generateTable = `CREATE TABLE IF NOT EXISTS public.worker (
