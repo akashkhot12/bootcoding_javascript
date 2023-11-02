@@ -26,7 +26,7 @@ const createTable = async () => {
   pool.end();
 };
 
-  // createTable()
+// createTable()
 
 const insertData = async (
   EmployeeID,
@@ -71,7 +71,7 @@ const getData = async (id) => {
 
 
 // update data
-const updateUser = async (EmployeeID,FirstName,LastName,Email,AddressLine,City) => {
+const updateUser = async (EmployeeID, FirstName, LastName, Email, AddressLine, City) => {
   const pool = new Pool(db.database);
   const qr = `UPDATE public.worker SET FirstName = '${FirstName}', LastName ='${LastName}', Email='${Email}', AddressLine ='${AddressLine}', City='${City}' WHERE EmployeeID = ${EmployeeID}`;
 

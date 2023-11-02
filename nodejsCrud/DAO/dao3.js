@@ -10,3 +10,8 @@ const query = async (req, res) => {
     return result;
   });
 };
+
+const createTable = async()=>{
+  const pool = new Pool(db.database);
+  const generateTable = ``
+}
