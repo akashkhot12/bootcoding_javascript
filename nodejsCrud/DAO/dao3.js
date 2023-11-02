@@ -11,7 +11,7 @@ const query = async (req, res) => {
   });
 };
 
-const createTable = async()=>{
+const createTable = async () => {
   const pool = new Pool(db.database);
-  const generateTable = ``
-}
+  const generateTable = ``;
+};
