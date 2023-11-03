@@ -24,4 +24,28 @@ const createTable = async()=>{
       pool.end();
 }
 
-createTable()
+// createTable()
+
+const insertData = async(
+    gadgetID,
+    gadgetname,
+    object,
+    type,
+    model
+)=>{
+    const pool = new Pool(db.database);
+    const insert =`insert into public.gadgetstall(gadgetID,gadgetname,object,type,model)
+    values('${gadgetID}','${gadgetname}','${object}','${type}','${model}')`; 
+    const result = await pool.query(insert);
+    let message="insert data";
+    if (result.affectedRows) {
+        message:message;
+    }
+    pool.end();
+    if (result) {
+        console.log("insert data");
+    }
+    return result
+}
+
+insertData(1,'remote','plastic','electrical','TV');

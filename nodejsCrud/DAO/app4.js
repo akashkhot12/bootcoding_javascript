@@ -19,10 +19,35 @@ const createTable = async()=>{
         lastName VARCHAR(50) NOT NULL,
         batch VARCHAR(50) UNIQUE,
         sallary VARCHAR(50),
-        sunject VARCHAR(100)
+        subject VARCHAR(100)
       );`
       const result = pool.query(generateTable);
       pool.end();
 }
 
 createTable()
+
+const insertData = async(
+    teacherID,
+    firstName,
+    lastName,
+    batch,
+    sallary,
+    subject
+)=>{
+    const pool = new Pool(db.database);
+    const insert = `insert into public.teacher(teacherID,firstName,lastName,batch,sallary,subject)
+    values('${teacherID}','${firstName}','${lastName}','${batch}','${sallary}','${subject}')`; 
+    const result = await pool.query(insert);
+    let message ="inserted data";
+    if (result.affectedRows) {
+        message:message
+    }
+    pool.end();
+    if (result) {
+        console.log("inserted data");
+    }
+    return result;
+}
+
+insertData(1,'laxman','hedaoo','morning',30000,'IT');
