@@ -17,3 +17,6 @@ async function insertService(
     subject
     )
 };
+
+
+module.exports={insertService}

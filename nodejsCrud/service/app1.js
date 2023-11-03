@@ -17,3 +17,5 @@ async function insertService(
 
 }
 insertService(2,"american touristor",'traveller','red','500');
+
+module.exports={insertService}

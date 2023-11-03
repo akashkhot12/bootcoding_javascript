@@ -17,3 +17,5 @@ async function insertService(
     typeofpages
  )
 }
+
+module.exports={insertService}

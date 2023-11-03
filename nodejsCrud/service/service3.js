@@ -18,3 +18,5 @@ async function insertService(
     )
 }
 insertService(3,"akash","sadavarsti","akash40@gmail.com","nagpur","nagpur")
+
+module.exports={insertService}
