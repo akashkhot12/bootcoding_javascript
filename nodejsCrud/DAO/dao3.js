@@ -13,5 +13,16 @@ const query = async (req, res) => {
 
 const createTable = async () => {
   const pool = new Pool(db.database);
-  const generateTable = ``;
+  const generateTable = `CREATE TABLE IF NOT EXISTS public.student (
+        StudentID INT PRIMARY KEY,
+        FirstName VARCHAR(50) NOT NULL,
+        LastName VARCHAR(50) NOT NULL,
+        Email VARCHAR(50) UNIQUE,
+        AddressLine VARCHAR(50),
+        City VARCHAR(100)
+      )`;
+   const result = pool.query(generateTable) ;
+   pool.end();
 };
+
+createTable();
