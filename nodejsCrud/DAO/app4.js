@@ -51,3 +51,8 @@ const insertData = async(
 }
 
 insertData(1,'laxman','hedaoo','morning',30000,'IT');
+
+
+
+
+module.exports={insertData}
