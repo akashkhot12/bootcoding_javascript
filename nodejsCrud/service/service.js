@@ -22,6 +22,10 @@ async function getService(id) {
   return await data.getData(id);
 }
 
+async function getServiceEmail(Email) {
+  return await data.getDataEmail(Email);
+}
+
 async function updateService(
   EmployeeID,
   FirstName,
@@ -46,4 +50,4 @@ async function deleteService(id) {
   return await data.deleteFunction(id);
 }
 
-module.exports = { insertService, getService, updateService, deleteService };
+module.exports = { insertService, getService, updateService, deleteService,getServiceEmail };

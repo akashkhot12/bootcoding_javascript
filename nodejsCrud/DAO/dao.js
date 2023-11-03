@@ -70,6 +70,18 @@ const getData = async (id) => {
 
 // getData(1);
 
+const getDataEmail = async (Email) => {
+  const pool = new Pool(db.database);
+  const qry = ` select * from public.worker WHERE email = '${Email}'`;
+
+  const res = await pool.query(qry);
+  if (res.affectedRows) {
+    message: res;
+  }
+  pool.end();
+  console.log(res.rows);
+  return res.rows;
+};
 
 // update data
 const updateUser = async (EmployeeID, FirstName, LastName, Email, AddressLine, City) => {
@@ -111,4 +123,4 @@ async function deleteFunction(id) {
   return res.rows;
 }
 
-module.exports = { insertData, getData, updateUser, deleteFunction };
+module.exports = { insertData, getData, updateUser, deleteFunction ,getDataEmail};
