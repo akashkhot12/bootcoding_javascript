@@ -47,3 +47,7 @@ const insertData = async(
 }
 
 insertData(1,"akash","khot","akashkhot03@gmail.com","bhandara","bhandara");
+
+
+
+module.exports={insertData}

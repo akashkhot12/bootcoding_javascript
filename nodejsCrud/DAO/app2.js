@@ -50,3 +50,8 @@ const insertData = async(
 }
 
 insertData(1,'classmate',200,'plain',70,'single line');
+
+
+
+
+module.exports={insertData}

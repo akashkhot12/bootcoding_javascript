@@ -49,3 +49,9 @@ const insertData = async(
 }
 
 insertData(1,'remote','plastic','electrical','TV');
+
+
+
+
+
+module.exports={insertData}

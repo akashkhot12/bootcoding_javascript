@@ -46,3 +46,7 @@ const insertData = async(
 }
 
 insertData(1,'skybag','college','black',3000)
+
+
+
+module.exports={insertData}
