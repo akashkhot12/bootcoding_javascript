@@ -24,4 +24,25 @@ const createTable = async()=>{
       const result = pool.query(generateTable);
       pool.end()
 }
-createTable()
+// createTable()
+
+const insertData = async(
+    bagID,
+    bagname,
+    bagtype,
+    color,
+    price
+)=>{
+    const pool = new Pool(db.database);
+    const insert = `insert into public.fancybag(bagID,bagname,bagtype,color,price)
+    values('${bagID}','${bagname}','${bagtype}','${color}','${price}')`; 
+    const result  = await pool.query(insert);
+    let message = "included data"
+    if (result.affectedRows) {
+        message:message
+    }
+    pool.end();
+    return result;
+}
+
+insertData(1,'skybag','college','black',3000)

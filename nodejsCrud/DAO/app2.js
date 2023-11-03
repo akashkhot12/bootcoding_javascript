@@ -24,4 +24,29 @@ const createTable = async()=>{
       const result = pool.query(generateTable);
       pool.end()
 }
-createTable();
+// createTable();
+
+const insertData = async(
+    bookID,
+    bookname,
+    pages,
+    type,
+    price,
+    typeofpages
+)=>{
+    const pool = new Pool(db.database);
+    const insert = `insert into public.bookstall(bookID,bookname,pages,type,price,typeofpages)
+    values('${bookID}','${bookname}','${pages}','${type}','${price}','${typeofpages}')`; 
+    const result = await pool.query(insert);
+    let message = "uplode the data"
+    if (result.affectedRows) {
+        message:message;
+    }
+    pool.end();
+    if (result) {
+        console.log("your data is uploded");
+    }
+    return result;
+}
+
+insertData(1,'classmate',200,'plain',70,'single line');

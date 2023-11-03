@@ -25,4 +25,25 @@ const createTable = async () => {
    pool.end();
 };
 
-createTable();
+const insertData = async(
+  StudentID,
+  FirstName,
+  LastName,
+  Email,
+  AddressLine,
+  City
+)=>{
+  const pool = new Pool(db.database)
+  const insert = `insert into public.student(StudentID,FirstName,LastName,Email,AddressLine,City)
+  values('${StudentID}','${FirstName}','${LastName}','${Email}','${AddressLine}','${City}')`; 
+  const result = await pool.query(insert);
+  let message = "data is updated";
+  if (result.affectedRows) {
+    message: message;
+  }
+
+  pool.end();
+  return result;
+}
+
+insertData(1,"akash","khot","akashkhot03@gmail.com","bhandara","bhandara");
