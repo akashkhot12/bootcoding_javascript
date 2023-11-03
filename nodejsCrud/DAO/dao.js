@@ -50,6 +50,7 @@ const insertData = async (
   return res;
 };
 
+
 //   insertData(3,'chiu','khot','chiu@gmail.com','ram road','lakhani')
 
 //   get data
