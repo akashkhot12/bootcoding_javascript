@@ -24,3 +24,5 @@ router.post("/insertData",async(req,res)=>{
     
 })
 
+module.exports = router;
+
