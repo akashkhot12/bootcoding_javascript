@@ -17,6 +17,5 @@ async function insertService(
         City
     )
 }
-insertService(3,"akash","sadavarsti","akash40@gmail.com","nagpur","nagpur")
 
 module.exports={insertService}

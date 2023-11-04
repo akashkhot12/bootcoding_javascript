@@ -46,7 +46,6 @@ const insertData = async(
   return result;
 }
 
-insertData(1,"akash","khot","akashkhot03@gmail.com","bhandara","bhandara");
 
 
 
