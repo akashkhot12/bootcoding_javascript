@@ -43,15 +43,15 @@ const insertData = async (
   const res = await pool.query(insert);
   let message = "data is updated";
   if (res.affectedRows) {
-    message: message;
+    message: message; 
   }
-
   pool.end();
   return res;
+  
 };
 
 
-//   insertData(3,'chiu','khot','chiu@gmail.com','ram road','lakhani')
+  insertData(1,'chiu','khot','chiu@gmail.com','ram road','lakhani')
 
 //   get data
 
