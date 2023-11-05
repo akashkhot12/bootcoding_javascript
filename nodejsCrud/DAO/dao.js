@@ -11,7 +11,6 @@ const query = async (req, res) => {
   });
 };
 
-
 const createTable = async () => {
   const pool = new Pool(db.database);
   const generateTable = `CREATE TABLE IF NOT EXISTS public.worker (
@@ -43,15 +42,13 @@ const insertData = async (
   const res = await pool.query(insert);
   let message = "data is updated";
   if (res.affectedRows) {
-    message: message; 
+    message: message;
   }
   pool.end();
   return res;
-  
 };
 
-
-  insertData(1,'chiu','khot','chiu@gmail.com','ram road','lakhani')
+insertData(1, "chiu", "khot", "chiu@gmail.com", "ram road", "lakhani");
 
 //   get data
 
@@ -84,7 +81,14 @@ const getDataEmail = async (Email) => {
 };
 
 // update data
-const updateUser = async (EmployeeID, FirstName, LastName, Email, AddressLine, City) => {
+const updateUser = async (
+  EmployeeID,
+  FirstName,
+  LastName,
+  Email,
+  AddressLine,
+  City
+) => {
   const pool = new Pool(db.database);
   const qr = `UPDATE public.worker SET FirstName = '${FirstName}', LastName ='${LastName}', Email='${Email}', AddressLine ='${AddressLine}', City='${City}' WHERE EmployeeID = ${EmployeeID}`;
 
@@ -97,15 +101,7 @@ const updateUser = async (EmployeeID, FirstName, LastName, Email, AddressLine, C
   return res.rows;
 };
 
-
-
 // updateUser(1,'lokesh','khot','lokesh@gmail.com','wijahbkdj','hbf')
-
-
-
-
-
-
 
 // delete data
 async function deleteFunction(id) {
@@ -123,4 +119,10 @@ async function deleteFunction(id) {
   return res.rows;
 }
 
-module.exports = { insertData, getData, updateUser, deleteFunction ,getDataEmail};
+module.exports = {
+  insertData,
+  getData,
+  updateUser,
+  deleteFunction,
+  getDataEmail,
+};
