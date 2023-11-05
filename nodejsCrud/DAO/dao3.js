@@ -21,21 +21,21 @@ const createTable = async () => {
         AddressLine VARCHAR(50),
         City VARCHAR(100)
       )`;
-   const result = pool.query(generateTable) ;
-   pool.end();
+  const result = pool.query(generateTable);
+  pool.end();
 };
 
-const insertData = async(
+const insertData = async (
   StudentID,
   FirstName,
   LastName,
   Email,
   AddressLine,
   City
-)=>{
-  const pool = new Pool(db.database)
+) => {
+  const pool = new Pool(db.database);
   const insert = `insert into public.student(StudentID,FirstName,LastName,Email,AddressLine,City)
-  values('${StudentID}','${FirstName}','${LastName}','${Email}','${AddressLine}','${City}')`; 
+  values('${StudentID}','${FirstName}','${LastName}','${Email}','${AddressLine}','${City}')`;
   const result = await pool.query(insert);
   let message = "data is updated";
   if (result.affectedRows) {
@@ -44,9 +44,6 @@ const insertData = async(
 
   pool.end();
   return result;
-}
+};
 
-
-
-
-module.exports={insertData}
+module.exports = { insertData };
