@@ -48,9 +48,22 @@ const insertData = async(
     return result
 }
 
-insertData(1,'remote','plastic','electrical','TV');
+// insertData(1,'remote','plastic','electrical','TV');
 
 
+const getData=async(id)=>{
+ const pool = new Pool(db.database)
+ const qry = ` select * from public.gadgetstall WHERE gadgetID = ${id}`;
+ const result = await pool.query(qry);
+ let message ="show data ";
+ if (result.affectedRows) {
+    message:result
+ }
+ pool.end();
+ console.log(result.rows);
+ return result.rows;
+}
+getData(1)
 
 
 
