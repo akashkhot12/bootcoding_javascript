@@ -19,5 +19,9 @@ async function insertService(
 }
 
 
-asy
+async function getService(id){
+    return await data.getData
+}
+
+getService(1)
 module.exports={insertService}
