@@ -68,4 +68,4 @@ const getdata = async(id)=>{
 getdata(1)
 
 
-module.exports={insertData}
+module.exports={insertData,getdata}
