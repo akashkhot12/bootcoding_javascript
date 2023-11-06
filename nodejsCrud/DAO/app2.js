@@ -49,9 +49,23 @@ const insertData = async(
     return result;
 }
 
-insertData(1,'classmate',200,'plain',70,'single line');
+// insertData(1,'classmate',200,'plain',70,'single line');
 
 
+const getdata = async(id)=>{
+    const pool = new Pool(db.database);
+    const qry = ` select * from public.bookstall WHERE bookID = ${id}`
+    const result = await pool.query(qry);
+    let message ="show table";
+    if(result.affectedRows){
+        message:result
+    }
+    pool.end();
+    console.log(result.rows);
+    return result.rows
+}
+
+getdata(1)
 
 
 module.exports={insertData}
