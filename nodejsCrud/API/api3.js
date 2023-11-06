@@ -23,4 +23,16 @@ router.post("/insertData", async (req, res) => {
   res.status(200).json({status:"success",message:dbResponse})
 });
 
+router.get("/showdata/:id",async(req,res)=>{
+  let StudentID = req.parse.StudentID;
+  let dbResponse = await service.getService(StudentID);
+  if(dbResponse){
+    res.status(200).json(dbResponse)
+  }
+  else{
+    res.status(400)
+    console.log("data is not show");
+  }
+})
+
 module.exports= router;
