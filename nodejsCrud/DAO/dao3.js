@@ -55,6 +55,7 @@ const getData = async(id)=>{
     message:result
   }
   pool.end();
+  console.log(result.rows);
   return result.rows;
 }
 
