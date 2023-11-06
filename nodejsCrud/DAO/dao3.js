@@ -46,4 +46,18 @@ const insertData = async (
   return result;
 };
 
+const getData = async(id)=>{
+  const pool = new Pool(db.database);
+  const qry = ` select * from public.student WHERE StudentID = ${id}`;
+  const result =await pool.query(qry);
+  let message = "data is show";
+  if (result.affectedRows){
+    message:result
+  }
+  pool.end();
+  return result.rows;
+}
+
+getData(1)
+
 module.exports = { insertData };
