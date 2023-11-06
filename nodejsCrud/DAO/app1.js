@@ -45,8 +45,20 @@ const insertData = async(
     return result;
 }
 
-insertData(1,'skybag','college','black',3000)
+// insertData(1,'skybag','college','black',3000)
 
-
+const getData = async(id)=>{
+    const pool = new Pool(db.database);
+    const qry = ` select * from public.fancybag WHERE bagID = ${id}`;
+    const result = await pool.query(qry);
+    let message="data is show";
+    if (result.affectedRows) {
+        message:result.rows
+    }
+    pool.end();
+    console.log(result.rows);
+    return result.rows
+}
+getData(2);
 
 module.exports={insertData}
