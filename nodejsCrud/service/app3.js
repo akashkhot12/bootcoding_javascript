@@ -4,4 +4,8 @@ async function insertService(gadgetID, gadgetname, object, type, model) {
   return await data.insertData(gadgetID, gadgetname, object, type, model);
 }
 
-module.exports = { insertService };
+async function getService(id){
+  return await data.getData
+}
+
+module.exports = { insertService,getService };

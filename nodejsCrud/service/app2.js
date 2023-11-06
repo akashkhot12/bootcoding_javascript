@@ -18,4 +18,8 @@ async function insertService(
   );
 }
 
-module.exports = { insertService };
+async function getService(id){
+  return await data.getdata
+}
+
+module.exports = { insertService ,getService};

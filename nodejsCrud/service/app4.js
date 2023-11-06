@@ -18,5 +18,8 @@ async function insertService(
     )
 };
 
+async function getService(id){
+    return await data.getData
+}
 
-module.exports={insertService}
+module.exports={insertService,getService}
