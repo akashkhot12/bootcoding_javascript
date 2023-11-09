@@ -24,8 +24,8 @@ router.post("/insertData", async (req, res) => {
 });
 
 router.get("/showdata/:id",async(req,res)=>{
-  let StudentID = req.parse.StudentID;
-  let dbResponse = await service.getService(StudentID);
+  let id = req.parse.id;
+  let dbResponse = await service.getService(id);
   if(dbResponse){
     res.status(200).json(dbResponse)
   }
