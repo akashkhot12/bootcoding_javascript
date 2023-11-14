@@ -63,7 +63,7 @@ const getData = async(id)=>{
 
 const getDataEmail = async(Email)=>{
   const pool = new Pool(db.database);
-  const qry=`select * from public.student WHERE StudentID = ${id}`;
+  const qry=`select * from public.student WHERE Email = ${Email}`;
   const result = await pool.query(qry);
   let message = "data is show";
   if(result.affectedRows){
@@ -73,5 +73,6 @@ const getDataEmail = async(Email)=>{
   console.log(result.rows);
   return result.rows;
 }
+
 
 module.exports = { insertData,getData,getDataEmail };

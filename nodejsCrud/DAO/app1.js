@@ -1,5 +1,6 @@
 const { Pool, Client, Query } = require("pg");
 const db = require("../Connections/app1");
+const { getDataEmail } = require("./dao3");
 
 
 const query = async(req,res)=>{
@@ -59,6 +60,7 @@ const getData = async(id)=>{
     console.log(result.rows);
     return result.rows
 }
-getData(2);
+// getData(2);
+
 
 module.exports={insertData,getData}
