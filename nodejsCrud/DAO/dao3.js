@@ -48,7 +48,7 @@ const insertData = async (
 
 const getData = async(id)=>{
   const pool = new Pool(db.database);
-  const qry = ` select * from public.student WHERE StudentID = ${id}`;
+  const qry = `select * from public.student WHERE StudentID = ${id}`;
   const result =await pool.query(qry);
   let message = "data is show";
   if (result.affectedRows){
@@ -59,6 +59,19 @@ const getData = async(id)=>{
   return result.rows;
 }
 
-getData(1)
+// getData(1)
 
-module.exports = { insertData,getData };
+const getDataEmail = async(Email)=>{
+  const pool = new Pool(db.database);
+  const qry=`select * from public.student WHERE StudentID = ${id}`;
+  const result = await pool.query(qry);
+  let message = "data is show";
+  if(result.affectedRows){
+    message:result
+  }
+  pool.end();
+  console.log(result.rows);
+  return result.rows;
+}
+
+module.exports = { insertData,getData,getDataEmail };
